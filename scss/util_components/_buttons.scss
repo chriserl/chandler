@@ -1,0 +1,36 @@
+button {
+	@include flex(row, center, center);
+	outline: none;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.primary-action-button {
+	padding: $spacing-2 $spacing-12;
+	background-color: $primary-color;
+	border-radius: $spacing-3;
+	color: $light-01;
+}
+
+.gray-action-button {
+	@extend .primary-action-button;
+	background-color: $gray-06;
+	color: $primary-color;
+}
+
+.transparent-action-button {
+	color: $primary-color;
+}
+
+.action-icon-button {
+	background: $gray-06;
+	color: $black-06;
+	padding: 0 0.24rem;
+	border-radius: $spacing-4;
+	@include flex(row, center, center);
+
+	&:hover {
+		color: $danger-color;
+	}
+}

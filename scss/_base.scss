@@ -1,0 +1,41 @@
+/*Simple Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+	transition: all ease 0.25s;
+}
+
+:root {
+	font-size: calc(14px + 0.8vw);
+
+	@media screen and (min-width: 600px) {
+		font-size: calc(14px + 0.098vw);
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	display: flex;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Hide Focus Styles */
+:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+/*Font import*/
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;600;700&display=swap");
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+
+body {
+	font-family: Inter, Helvetica, -apple-system, SF Pro Display, San Francisco,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+}
