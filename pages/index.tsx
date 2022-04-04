@@ -7,9 +7,7 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Chandler | Home</title>
 			</Head>
-			<main>
-				<h1 className="h1">Chandler</h1>
-			</main>
+			<main></main>
 		</div>
 	);
 };

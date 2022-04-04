@@ -42,70 +42,34 @@
 	@include heading-4-bold;
 }
 
-.heading-5 {
-	@include heading-5;
+.body {
+	@include body;
 }
 
-.heading-5-bold {
-	@include heading-5-bold;
+.body-bold {
+	@include body-bold;
 }
 
-.paragraph-1 {
-	@include paragraph-1;
+.caption-1 {
+	@include caption-1;
 }
 
-.paragraph-1-medium {
-	@include paragraph-1-medium;
+.caption-1-bold {
+	@include caption-1-bold;
 }
 
-.paragraph-1-bold {
-	@include paragraph-1-bold;
+.caption-2 {
+	@include caption-2;
 }
 
-.paragraph-2 {
-	@include paragraph-2;
+.caption-2-bold {
+	@include caption-2-bold;
 }
 
-.paragraph-2-medium {
-	@include paragraph-2-medium;
+.caption-3 {
+	@include caption-3;
 }
 
-.paragraph-2-bold {
-	@include paragraph-2-bold;
-}
-
-.details-1 {
-	@include details-1;
-}
-
-.details-1-medium {
-	@include details-1-medium;
-}
-
-.details-1-bold {
-	@include details-1-bold;
-}
-
-.details-2 {
-	@include details-2;
-}
-
-.details-2-medium {
-	@include details-2-medium;
-}
-
-.details-2-bold {
-	@include details-2-bold;
-}
-
-.details-3 {
-	@include details-3;
-}
-
-.details-3-medium {
-	@include details-3-medium;
-}
-
-.details-3-bold {
-	@include details-3-bold;
+.caption-3-bold {
+	@include caption-3-bold;
 }

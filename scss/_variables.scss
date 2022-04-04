@@ -1,28 +1,30 @@
 //Colors
+//Accents
 $primary-color: hsl(211, 100%, 50%);
+$secondary-color: hsl(264, 100%, 50%);
+$gradient-color: linear-gradient($primary-color, $secondary-color);
 $warning-color: hsl(48, 100%, 50%);
 $success-color: hsl(135, 59%, 49%);
 $danger-color: hsl(3, 100%, 59%);
 
-//Lights & Grays
-$light-01: hsl(0, 0%, 100%);
-$light-02: hsl(240, 20%, 99%);
-$gray-01: hsl(240, 2%, 57%);
-$gray-02: hsl(240, 3%, 69%);
-$gray-03: hsl(240, 5%, 79%);
-$gray-04: hsl(240, 6%, 83%);
-$gray-05: hsl(240, 11%, 91%);
-$gray-06: hsl(240, 24%, 96%);
+//Grays
+$gray-01: hsl(240, 24%, 99%);
+$gray-02: hsl(240, 11%, 95%);
+$gray-03: hsl(240, 6%, 90%);
+$gray-04: hsl(240, 5%, 79%);
+$gray-05: hsl(240, 3%, 69%);
+$gray-06: hsl(240, 2%, 57%);
 
 //Blacks
-$black-01: hsl(240, 2%, 57%);
-$black-02: hsl(240, 1%, 39%);
-$black-03: hsl(240, 1%, 29%);
-$black-04: hsl(240, 2%, 23%);
-$black-05: hsl(240, 3%, 11%);
-$black-06: hsl(240, 3%, 11%);
+$black-01: hsl(0, 0%, 39%);
+$black-02: hsl(0, 0%, 29%);
+$black-03: hsl(0, 0%, 23%);
+$black-04: hsl(0, 0%, 18%);
+$black-05: hsl(0, 0%, 11%);
+$black-06: hsl(0, 0%, 4%);
 
 //Spacing
+$rempx: calc(1.04rem / 16); //Rem pixel
 $spacing-1: 0.2rem;
 $spacing-2: 0.4rem;
 $spacing-3: 0.6rem;

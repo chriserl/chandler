@@ -50,137 +50,109 @@
 
 //Text
 @mixin title-1 {
-	font-size: 2.887rem;
+	font-size: calc($rempx * 45);
+	font-weight: 600;
+}
+
+@mixin title-1-bold {
+	font-size: calc($rempx * 45);
 	font-weight: 700;
 }
 
 @mixin title-2 {
-	font-size: 2.566rem;
+	font-size: calc($rempx * 37);
+	font-weight: 600;
+}
+
+@mixin title-2-bold {
+	font-size: calc($rempx * 37);
 	font-weight: 700;
 }
+
 @mixin title-3 {
-	font-size: 2.281rem;
+	font-size: calc($rempx * 35);
+	font-weight: 600;
+}
+
+@mixin title-3-bold {
+	font-size: calc($rempx * 35);
 	font-weight: 700;
 }
 
 @mixin heading-1 {
-	font-size: 2.027rem;
-	font-weight: 600;
+	font-size: calc($rempx * 29);
+	font-weight: 500;
 }
 
 @mixin heading-1-bold {
-	font-size: 2.027rem;
-	font-weight: 700;
+	font-size: calc($rempx * 29);
+	font-weight: 600;
 }
 
 @mixin heading-2 {
-	font-size: 1.802rem;
-	font-weight: 600;
+	font-size: calc($rempx * 27);
+	font-weight: 500;
 }
 
 @mixin heading-2-bold {
-	font-size: 1.802rem;
-	font-weight: 700;
+	font-size: calc($rempx * 27);
+	font-weight: 600;
 }
 
 @mixin heading-3 {
-	font-size: 1.602rem;
-	font-weight: 600;
+	font-size: calc($rempx * 22);
+	font-weight: 500;
 }
 
 @mixin heading-3-bold {
-	font-size: 1.602rem;
-	font-weight: 700;
+	font-size: calc($rempx * 20);
+	font-weight: 600;
 }
 
 @mixin heading-4 {
-	font-size: 1.424rem;
-	font-weight: 600;
+	font-size: calc($rempx * 20);
+	font-weight: 500;
 }
 
 @mixin heading-4-bold {
-	font-size: 1.424rem;
-	font-weight: 700;
-}
-
-@mixin heading-5 {
-	font-size: 1.266rem;
+	font-size: calc($rempx * 20);
 	font-weight: 600;
 }
 
-@mixin heading-5-bold {
-	font-size: 1.266rem;
-	font-weight: 700;
+@mixin body {
+	font-size: calc($rempx * 17);
 }
 
-@mixin paragraph-1 {
-	font-size: 1.125rem;
-}
-
-@mixin paragraph-1-medium {
-	@include paragraph-1;
+@mixin body-bold {
+	@include body;
 	font-weight: 500;
 }
 
-@mixin paragraph-1-bold {
-	@include paragraph-1;
-	font-weight: 700;
+@mixin caption-1 {
+	font-size: calc($rempx * 16);
 }
 
-@mixin paragraph-2 {
-	font-size: 1rem;
-}
-
-@mixin paragraph-2-medium {
-	font-size: 1rem;
+@mixin caption-1-bold {
+	@include caption-1;
 	font-weight: 500;
 }
 
-@mixin paragraph-2-bold {
-	@include paragraph-2;
-	font-weight: 700;
+@mixin caption-2 {
+	font-size: calc($rempx * 15);
 }
 
-@mixin details-1 {
-	font-size: 0.889rem;
-}
-
-@mixin details-1-medium {
-	@include details-1;
+@mixin caption-2-bold {
+	@include caption-2;
 	font-weight: 500;
 }
 
-@mixin details-1-bold {
-	@include details-1;
-	font-weight: 600;
+@mixin caption-3 {
+	font-size: calc($rempx * 13);
 }
 
-@mixin details-2 {
-	font-size: 0.79rem;
-}
-
-@mixin details-2-medium {
-	@include details-2;
+@mixin caption-3-bold {
+	@include caption-3;
 	font-weight: 500;
-}
-
-@mixin details-2-bold {
-	@include details-2;
-	font-weight: 600;
-}
-
-@mixin details-3 {
-	font-size: 0.702rem;
-}
-
-@mixin details-3-medium {
-	@include details-3;
-	font-weight: 500;
-}
-
-@mixin details-3-bold {
-	@include details-3;
-	font-weight: 600;
 }
 
 //Icons
