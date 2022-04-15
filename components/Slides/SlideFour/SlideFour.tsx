@@ -1,17 +1,15 @@
 import type { FC } from "react";
 import GenericSlide from "../GenericSlide/GenericSlide";
-import slide from "./gallery.module.scss";
+import slide from "./slidefour.module.scss";
 
-const Gallery: FC = () => {
+const SlideFour: FC = ({ children }) => {
 	return (
 		<GenericSlide shade="transparent">
 			<div className={slide.slide}>
-				<div className={slide.gallery}>
-					<img src="/" alt="image" />
-				</div>
+				<div className={slide.masonry}>{children}</div>
 			</div>
 		</GenericSlide>
 	);
 };
 
-export default Gallery;
+export default SlideFour;
