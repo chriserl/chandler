@@ -1,0 +1,112 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.slide {
+	width: 100%;
+	margin: 0 auto;
+
+	@include tab {
+		width: max-content;
+	}
+
+	.slideText {
+		.text {
+			.caption {
+				background: $gradient-color;
+				margin-bottom: respx(8);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.title {
+				margin-bottom: respx(12);
+				color: $black-06;
+			}
+			.description {
+				margin-bottom: respx(28);
+				color: $black-01;
+
+				@include laptop-small {
+					margin-bottom: respx(28);
+				}
+			}
+			.extra {
+				color: $black-06;
+				margin-bottom: respx(64);
+
+				@include tab {
+					margin-bottom: respx(40);
+				}
+
+				@include laptop-small {
+					margin-bottom: respx(64);
+				}
+			}
+		}
+	}
+
+	.imageContainer {
+		width: 100%;
+
+		.image {
+			width: 96%;
+			margin: 0 auto;
+			height: auto;
+
+			@include tab {
+				width: respx(400);
+				margin: 0;
+			}
+
+			@include laptop-small {
+				width: respx(640);
+			}
+		}
+	}
+}
+
+.textLeft {
+	@include flex(column, center, center);
+
+	@include tab {
+		@include flex(row);
+	}
+
+	.slideText {
+		margin-right: respx(24);
+
+		.text {
+			width: max-content;
+
+			@include flex(column, center, center);
+
+			@include tab {
+				text-align: right;
+				@include flex(column, end);
+			}
+		}
+	}
+}
+
+.textRight {
+	@include flex(column, center, center);
+
+	@include tab {
+		@include flex(row, center, center);
+	}
+
+	.slideText {
+		margin-left: respx(24);
+		order: 1;
+
+		.text {
+			width: max-content;
+
+			@include flex(column, center, center);
+
+			@include tab {
+				@include flex(column, start);
+			}
+		}
+	}
+}
