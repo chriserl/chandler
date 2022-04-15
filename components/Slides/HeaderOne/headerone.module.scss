@@ -1,0 +1,19 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.headOne {
+	width: 100%;
+	padding: respx(96) 0 respx(120) 0;
+	background-color: $gray-00;
+	@include flex(column, center, center);
+
+	.title {
+		color: $black-06;
+		margin-bottom: respx(16);
+	}
+
+	.description {
+		color: $black-01;
+		margin-bottom: respx(48);
+	}
+}
