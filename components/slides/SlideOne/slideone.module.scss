@@ -1,0 +1,83 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.slide {
+	width: 100%;
+	margin: 0 auto;
+
+	.slideText {
+		.text {
+			.caption {
+				background: $gradient-color;
+				margin-bottom: respx(8);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+				@include laptop-small {
+					margin-bottom: respx(8);
+				}
+			}
+			.title {
+				margin-bottom: respx(8);
+				color: $black-06;
+
+				@include laptop-small {
+					margin-bottom: respx(8);
+				}
+			}
+			.description {
+				margin-bottom: respx(64);
+				color: $black-01;
+
+				@include tab {
+					margin-bottom: respx(40);
+				}
+
+				@include laptop-small {
+					margin-bottom: respx(64);
+				}
+			}
+		}
+	}
+
+	.imageContainer {
+		.image {
+			width: 100%;
+			height: auto;
+
+			@include tab {
+				width: respx(400);
+			}
+
+			@include laptop-small {
+				width: respx(640);
+			}
+		}
+	}
+}
+
+.textTop {
+	@include flex(column);
+
+	.slideText {
+		margin-bottom: respx(64);
+
+		.text {
+			@include flex(column, center);
+		}
+	}
+}
+
+.textBottom {
+	@include flex(column);
+
+	.slideText {
+		margin-top: respx(64);
+		order: 1;
+
+		.text {
+			@include flex(column, center);
+		}
+	}
+}

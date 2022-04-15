@@ -1,0 +1,7 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.link {
+	color: $primary-color;
+	@include flex(row, center, center);
+}
