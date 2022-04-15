@@ -1,0 +1,14 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.button {
+	@include flex(row, center, center);
+	outline: none;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.iconButton {
+	@extend .button;
+}
