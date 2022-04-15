@@ -19,24 +19,13 @@
 				}
 			}
 			.title {
-				margin-bottom: respx(8);
+				margin-bottom: respx(7.2);
 				color: $black-06;
-
-				@include laptop-small {
-					margin-bottom: respx(8);
-				}
 			}
+
 			.description {
-				margin-bottom: respx(64);
+				margin-bottom: respx(48);
 				color: $black-01;
-
-				@include tab {
-					margin-bottom: respx(40);
-				}
-
-				@include laptop-small {
-					margin-bottom: respx(64);
-				}
 			}
 		}
 	}
@@ -61,7 +50,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-bottom: respx(64);
+		margin-bottom: respx(48);
 
 		.text {
 			@include flex(column, center);
@@ -73,7 +62,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-top: respx(64);
+		margin-top: respx(48);
 		order: 1;
 
 		.text {

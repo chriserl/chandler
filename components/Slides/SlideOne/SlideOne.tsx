@@ -18,7 +18,7 @@ const SlideOne: FC<SlideOne> = ({ shade, textPosition }) => {
 						</p>
 						<Link
 							label="About us"
-							url="#"
+							url="/"
 							icon="chevron-right"
 							size="body"
 							iconSize="medium"
