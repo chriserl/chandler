@@ -7,7 +7,13 @@ const SlideSix: FC = () => {
 	return (
 		<GenericSlide shade="light">
 			<div className={slide.slide}>
-				<Icon name="bookmark" size="xxlarge" padding={false} weight="solid" />
+				<Icon
+					name="bookmark"
+					size="xxlarge"
+					padding={false}
+					weight="solid"
+					color="black"
+				/>
 				<p className={`heading-4 ${slide["title"]}`}>Verse of the day</p>
 				<div className={slide["mainTextArea"]}>
 					<p className={`title-1 ${slide["mainText"]}`}>
