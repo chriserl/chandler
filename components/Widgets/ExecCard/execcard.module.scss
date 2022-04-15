@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.ec {
+	width: respx(180);
+	display: inline-block;
+	margin: respx(16) respx(24) respx(64);
+
+	.details {
+		margin: 0 respx(8);
+		@include flex(row, center, space-between);
+
+		.name {
+			color: $black-06;
+		}
+
+		.role {
+			color: $primary-color;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: respx(16);
+		margin-bottom: respx(16);
+	}
+}
