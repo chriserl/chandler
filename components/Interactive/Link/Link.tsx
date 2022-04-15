@@ -8,7 +8,15 @@ const Link: FC<Link> = ({ label, url, icon, size, iconSize }) => (
 		<a href={url} className={size}>
 			{label}
 		</a>
-		{icon && <Icon name={icon} padding={false} size={iconSize} />}
+		{icon && (
+			<Icon
+				name={icon}
+				padding={false}
+				size={iconSize}
+				weight="line"
+				color="primary"
+			/>
+		)}
 	</div>
 );
 

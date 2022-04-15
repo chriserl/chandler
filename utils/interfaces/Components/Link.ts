@@ -3,5 +3,5 @@ export interface Link {
 	url: string;
 	icon?: string;
 	size: string;
-	iconSize: "small" | "regular" | "medium" | "large";
+	iconSize: "small" | "regular" | "medium" | "large" | "xlarge" | "xxlarge";
 }
