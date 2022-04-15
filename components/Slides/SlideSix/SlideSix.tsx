@@ -3,7 +3,7 @@ import GenericSlide from "../GenericSlide/GenericSlide";
 import { Icon } from "../../Interactive/Icon/Icon";
 import slide from "./slidesix.module.scss";
 
-const Quote: FC = () => {
+const SlideSix: FC = () => {
 	return (
 		<GenericSlide shade="light">
 			<div className={slide.slide}>
@@ -22,4 +22,4 @@ const Quote: FC = () => {
 	);
 };
 
-export default Quote;
+export default SlideSix;
