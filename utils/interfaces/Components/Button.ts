@@ -1,11 +1,14 @@
 export interface TextButton {
-	weight?: "solid" | "bordered" | "transparent";
+	weight: "solid" | "bordered" | "transparent";
+	color: "primary" | "secondary" | "gray";
 	size: string;
 	label: string;
 }
 
 export interface IconButton {
-	weight?: "solid" | "bordered" | "transparent";
+	icon: string;
+	weight: "solid" | "bordered" | "transparent";
+	color: "primary" | "secondary" | "gray";
 	size: string;
 	iconSize: "small" | "regular" | "medium" | "large";
 	label: string;

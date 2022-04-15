@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.cc {
+	max-width: respx(400);
+	padding: respx(12) respx(32);
+	background-color: $gray-01;
+	border-radius: respx(6.4);
+	margin: 0 respx(24);
+
+	.contact {
+		color: $black-06;
+	}
+
+	hr {
+		margin-top: respx(10);
+		opacity: 0.64;
+	}
+
+	.details {
+		margin-top: respx(10);
+		@include flex(row, center, space-between);
+	}
+}

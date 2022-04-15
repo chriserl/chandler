@@ -9,6 +9,18 @@
 	cursor: pointer;
 }
 
+.transparent + .primary {
+	color: $primary-color;
+}
+
+.transparent + .gray {
+	color: $gray-06;
+}
+
+.textButton {
+	@extend .button;
+}
+
 .iconButton {
 	@extend .button;
 }

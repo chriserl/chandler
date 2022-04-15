@@ -6,19 +6,30 @@ import {
 import { Icon } from "../Icon/Icon";
 import button from "./button.module.scss";
 
-const TextButton: FC<TextButton> = ({ weight, size, label }) => {
+const TextButton: FC<TextButton> = ({ weight, size, label, color }) => {
 	return (
-		<button className={button.textButton}>
+		<button
+			className={`${button.textButton} ${button[weight]} ${button[color]}`}
+		>
 			<p className={`button.${size}`}>{label}</p>
 		</button>
 	);
 };
 
-const IconButton: FC<IconButton> = ({ weight, size, label, iconSize }) => {
+const IconButton: FC<IconButton> = ({
+	weight,
+	size,
+	label,
+	iconSize,
+	color,
+	icon,
+}) => {
 	return (
-		<button className={button.iconButton}>
+		<button
+			className={`${button.iconButton} ${button[weight]} ${button[color]}`}
+		>
 			<p className={`button.${size}`}>{label}</p>
-			<Icon name="plus" size={iconSize} padding={false} />
+			<Icon name={icon} size={iconSize} padding={false} />
 		</button>
 	);
 };
