@@ -1,0 +1,19 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.slide {
+	width: 96%;
+	margin: respx(64) auto respx(96);
+
+	.title {
+		margin-bottom: respx(80);
+		color: $black-06;
+		text-align: center;
+	}
+
+	.flex {
+		width: 100%;
+		flex-wrap: wrap;
+		@include flex(row, center, center);
+	}
+}
