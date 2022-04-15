@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.sc {
+	width: 100%;
+	height: max-content;
+
+	.column {
+		padding: respx(8);
+		@include flex(column);
+	}
+
+	.row {
+		@include flex(row, center, center);
+	}
+
+	.light {
+		background: $gray-00;
+	}
+
+	.gray {
+		background: $gray-01;
+	}
+}

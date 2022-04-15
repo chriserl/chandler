@@ -13,6 +13,12 @@
 	justify-content: $justify;
 }
 
+//Calculate Responsive Pixel
+@function respx($px) {
+	$result: calc($rempx * $px);
+	@return $result;
+}
+
 //Display none
 @mixin d-none {
 	display: none;
@@ -153,35 +159,6 @@
 @mixin caption-3-bold {
 	@include caption-3;
 	font-weight: 500;
-}
-
-//Icons
-@mixin small-icon {
-	font-size: 1rem;
-	padding: 0.26rem;
-	cursor: pointer;
-	@include flex;
-}
-
-@mixin regular-icon {
-	font-size: 1.18rem;
-	padding: 0.2rem;
-	cursor: pointer;
-	@include flex;
-}
-
-@mixin medium-icon {
-	font-size: 1.32rem;
-	padding: 0.24rem;
-	cursor: pointer;
-	@include flex;
-}
-
-@mixin large-icon {
-	font-size: 1.64rem;
-	padding: 0.2rem;
-	cursor: pointer;
-	@include flex;
 }
 
 //Hide Scrollbar

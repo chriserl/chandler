@@ -1,0 +1,30 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.qt {
+	text-align: center;
+
+	.title {
+		margin-top: respx(16);
+		margin-bottom: respx(88);
+		color: $primary-color;
+	}
+
+	.quote {
+		width: 80%;
+		margin: 0 auto;
+
+		@include laptop-small {
+			width: 36%;
+		}
+
+		.quoteText {
+			color: $black-06;
+		}
+
+		.version {
+			margin-top: respx(40);
+			color: $black-01;
+		}
+	}
+}

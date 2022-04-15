@@ -7,7 +7,11 @@
 }
 
 :root {
-	font-size: calc(14px + 0.8vw);
+	font-size: calc(8px + 0.28vw);
+
+	@media screen and (min-width: 375px) {
+		font-size: calc(8px + 0.64vw);
+	}
 
 	@media screen and (min-width: 600px) {
 		font-size: calc(14px + 0.098vw);

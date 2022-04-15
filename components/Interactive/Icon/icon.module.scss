@@ -1,0 +1,35 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.smallIcon {
+	font-size: 1rem;
+	padding: 0.26rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.regularIcon {
+	font-size: 1.18rem;
+	padding: 0.2rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.mediumIcon {
+	font-size: 1.32rem;
+	padding: 0.24rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.largeIcon {
+	font-size: respx(48);
+	padding: 0.2rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.unPad {
+	padding: 0;
+	margin: 0;
+}

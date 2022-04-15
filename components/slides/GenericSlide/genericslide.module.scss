@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.gs {
+	width: 100%;
+	height: max-content;
+	border-radius: respx(8);
+	padding: respx(112) respx(16) respx(120) respx(16);
+	margin-bottom: respx(8);
+}
+
+.light {
+	background: $gray-00;
+	@extend .gs;
+}
