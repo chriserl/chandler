@@ -2,28 +2,42 @@
 @import "../../../scss/utilities";
 
 .smallIcon {
-	font-size: 1rem;
-	padding: 0.26rem;
+	font-size: respx(15);
+	padding: respx(4);
 	cursor: pointer;
 	@include flex(row, center, center);
 }
 
 .regularIcon {
-	font-size: 1.18rem;
-	padding: 0.2rem;
+	font-size: respx(18);
+	padding: respx(4.2);
 	cursor: pointer;
 	@include flex(row, center, center);
 }
 
 .mediumIcon {
-	font-size: 1.32rem;
-	padding: 0.24rem;
+	font-size: respx(22);
+	padding: respx(4.4);
 	cursor: pointer;
 	@include flex(row, center, center);
 }
 
 .largeIcon {
-	font-size: respx(48);
+	font-size: respx(26);
+	padding: 0.2rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.xlargeIcon {
+	font-size: respx(34);
+	padding: 0.2rem;
+	cursor: pointer;
+	@include flex(row, center, center);
+}
+
+.xxlargeIcon {
+	font-size: respx(44);
 	padding: 0.2rem;
 	cursor: pointer;
 	@include flex(row, center, center);

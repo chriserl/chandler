@@ -1,6 +1,6 @@
 export interface Icon {
 	name: string;
-	padding?: false;
-	solid?: true;
-	size: "small" | "regular" | "medium" | "large";
+	padding: false | true;
+	weight: "line" | "solid";
+	size: "small" | "regular" | "medium" | "large" | "xlarge" | "xxlarge";
 }

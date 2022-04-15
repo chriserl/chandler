@@ -2,16 +2,18 @@ import type { FC } from "react";
 import { Icon } from "../../../utils/interfaces/Components/Icon";
 import icon from "./icon.module.scss";
 
-const Icon: FC<Icon> = ({ size, name, solid, padding }) => {
+const Icon: FC<Icon> = ({ name, padding, weight, size }) => {
 	return (
 		<div className={icon.icon}>
-			{solid ? (
+			{weight === "solid" && (
 				<i
 					className={`bx bxs-${name} ${icon[size + "Icon"]} ${
 						!padding && icon.unPad
 					}`}
 				></i>
-			) : (
+			)}
+
+			{weight === "line" && (
 				<i
 					className={`bx bx-${name} ${icon[size + "Icon"]} ${
 						!padding && icon.unPad
