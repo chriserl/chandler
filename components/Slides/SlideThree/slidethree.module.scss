@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.slide {
+	max-width: respx(720);
+
+	.title {
+		margin-bottom: respx(24);
+		color: $black-02;
+	}
+
+	.mainText {
+		color: $black-06;
+	}
+}
+
+.left {
+	margin: respx(72) auto respx(80) respx(8);
+	@include flex(column, start);
+	@include tab {
+		margin: respx(72) auto respx(80) respx(96);
+	}
+	text-align: left;
+}
+
+.right {
+	margin: respx(72) respx(8) respx(80) auto;
+	@include flex(column, end);
+	@include tab {
+		margin: respx(72) respx(96) respx(80) auto;
+	}
+	text-align: right;
+}
