@@ -1,7 +1,7 @@
 @import "../../../scss/variables";
 @import "../../../scss/utilities";
 
-.qt {
+.slide {
 	text-align: center;
 
 	.title {
@@ -10,7 +10,7 @@
 		color: $primary-color;
 	}
 
-	.quote {
+	.mainTextArea {
 		width: 80%;
 		margin: 0 auto;
 
@@ -18,11 +18,11 @@
 			width: 36%;
 		}
 
-		.quoteText {
+		.mainText {
 			color: $black-06;
 		}
 
-		.version {
+		.details {
 			margin-top: respx(40);
 			color: $black-01;
 		}
