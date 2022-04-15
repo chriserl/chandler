@@ -16,3 +16,8 @@ export interface SlideTwo {
 	shade: "light" | "transparent";
 	textPosition: "textRight" | "textLeft";
 }
+
+export interface SlideThree {
+	shade: "light" | "transparent";
+	alignment: "right" | "left";
+}
