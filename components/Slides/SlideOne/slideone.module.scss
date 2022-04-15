@@ -24,7 +24,7 @@
 			}
 
 			.description {
-				margin-bottom: respx(48);
+				margin-bottom: respx(24);
 				color: $black-01;
 			}
 		}
@@ -50,7 +50,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-bottom: respx(48);
+		margin-bottom: respx(64);
 
 		.text {
 			@include flex(column, center);
@@ -62,7 +62,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-top: respx(48);
+		margin-top: respx(64);
 		order: 1;
 
 		.text {
