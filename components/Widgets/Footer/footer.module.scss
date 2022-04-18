@@ -13,7 +13,11 @@
 		flex-wrap: wrap;
 		@include flex(row, start, space-between);
 		@include tab {
-			width: 48%;
+			width: 56%;
+		}
+
+		a {
+			margin-bottom: respx(20);
 		}
 	}
 

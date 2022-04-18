@@ -7,32 +7,32 @@ const Footer: FC = () => {
 			<div className={footer.main}>
 				<div className={`${footer.socials} caption-2`}>
 					<a href="/" className={footer.social}>
-						Social 1
+						Instagram
 					</a>
 					<a href="/" className={footer.social}>
-						Social 1
+						Facebook
 					</a>
 					<a href="/" className={footer.social}>
-						Social 1
+						WhatsApp
 					</a>
 				</div>
 				<div className={`${footer.podcasts} caption-2`}>
 					<a href="/" className={footer.podcast}>
-						Podcast 1
+						Spotify
 					</a>
 					<a href="/" className={footer.podcast}>
-						Podcast 1
-					</a>
+						Podbean
+					</a>{" "}
 					<a href="/" className={footer.podcast}>
-						Podcast 1
+						Apple Podcasts
 					</a>
 				</div>
 				<div className={`${footer.org} caption-2`}>
 					<a href="/" className={footer.org}>
-						Org 1
+						Who are we
 					</a>
 					<a href="/" className={footer.org}>
-						Org 1
+						Ongoing Projects
 					</a>
 				</div>
 			</div>
