@@ -1,0 +1,35 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.footer {
+	width: 100%;
+	padding: respx(56) 0 respx(24);
+	background-color: $gray-01;
+	color: $gray-06;
+
+	.main {
+		width: 90%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		@include flex(row, start, space-between);
+		@include tab {
+			width: 48%;
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		margin-top: respx(56);
+		@include flex(row, center, center);
+
+		.designer {
+			margin-right: respx(40);
+
+			.link {
+				display: inline;
+				color: $primary-color;
+				margin-left: respx(6);
+			}
+		}
+	}
+}
