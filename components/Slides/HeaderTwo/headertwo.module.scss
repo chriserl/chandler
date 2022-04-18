@@ -11,11 +11,11 @@
 	padding-bottom: respx(112);
 	margin: 0 auto;
 	line-height: 1;
-	background: url("../../../public/images/headertwobg.jpg");
+	background: url("../../../public/images/home/headertwobg.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	@include flex(row, end);
+	@include flex(row, flex-end);
 
 	@include phone-large {
 		height: 90vh;
