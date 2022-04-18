@@ -1,0 +1,93 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	border-bottom: 1px solid $gray-02;
+	background-color: rgba(255, 255, 255, 0.64);
+	backdrop-filter: blur(48px);
+
+	.mainContainer {
+		padding: respx(10) respx(24);
+		@include flex(row, center, space-between);
+
+		.navLeft {
+			@include flex(row, center, center);
+
+			.brand {
+				color: $black-06;
+			}
+
+			.tabLinks {
+				@include d-none;
+
+				@include tab {
+					@include flex(row, center, center);
+					margin-left: respx(70);
+					@include flex(row, center, center);
+
+					.navItem {
+						margin: 0 respx(20);
+						a {
+							color: $black-01;
+						}
+					}
+				}
+			}
+		}
+
+		.navRight {
+			.toggleBtn {
+				@include tab {
+					@include d-none;
+				}
+			}
+
+			.supportLink {
+				@include d-none;
+
+				@include tab {
+					color: $primary-color;
+					@include flex;
+				}
+			}
+		}
+	}
+
+	.mobileLinks {
+		width: 92%;
+		margin: respx(24) auto respx(54);
+		padding: 0 respx(24);
+		@include flex(column, center, center);
+
+		@include tab {
+			@include d-none;
+		}
+
+		.navItem {
+			width: 100%;
+
+			.navLink {
+				width: 100%;
+				padding: respx(12) 0;
+				color: $black-02;
+				border-bottom: 0.8px solid $gray-02;
+			}
+		}
+
+		.navItem:last-child {
+			a {
+				color: $primary-color;
+				border: none;
+				@include flex;
+			}
+		}
+	}
+
+	.mobileNavClosed {
+		@include d-none;
+	}
+}

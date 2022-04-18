@@ -23,13 +23,15 @@ const IconButton: FC<IconButton> = ({
 	iconSize,
 	color,
 	icon,
+	clickFunction,
 }) => {
 	return (
 		<button
 			className={`${button.iconButton} ${button[weight]} ${button[color]}`}
+			onClick={() => clickFunction && clickFunction()}
 		>
 			<p className={`button.${size}`}>{label}</p>
-			<Icon name={icon} size={iconSize} padding={false} />
+			<Icon name={icon} size={iconSize} padding={false} weight="line" />
 		</button>
 	);
 };

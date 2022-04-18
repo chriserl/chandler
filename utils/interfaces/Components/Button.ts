@@ -3,6 +3,7 @@ export interface TextButton {
 	color: "primary" | "secondary" | "gray";
 	size: string;
 	label: string;
+	clickFunction?: Function;
 }
 
 export interface IconButton {
@@ -12,4 +13,5 @@ export interface IconButton {
 	size: string;
 	iconSize: "small" | "regular" | "medium" | "large";
 	label: string;
+	clickFunction?: Function;
 }
