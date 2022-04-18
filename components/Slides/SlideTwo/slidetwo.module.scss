@@ -4,13 +4,22 @@
 .slide {
 	width: 100%;
 	margin: 0 auto;
-
 	@include tab {
-		width: max-content;
+		width: 100%;
+		@include flex(row, center, center);
 	}
 
 	.slideText {
+		width: 58%;
+		@include tab {
+			width: 36%;
+		}
+		@include laptop-small {
+			width: 20%;
+		}
 		.text {
+			width: 100%;
+
 			.caption {
 				background: $gradient-color;
 				margin-bottom: respx(8);
@@ -25,10 +34,6 @@
 			.description {
 				margin-bottom: respx(28);
 				color: $black-01;
-
-				@include laptop-small {
-					margin-bottom: respx(28);
-				}
 			}
 			.extra {
 				color: $black-06;
@@ -49,45 +54,44 @@
 		width: 100%;
 
 		.image {
-			width: 96%;
-			margin: 0 auto;
+			width: 100%;
 			height: auto;
 
 			@include tab {
-				width: respx(400);
-				margin: 0;
+				width: 100%;
 			}
+		}
 
-			@include laptop-small {
-				width: respx(640);
-			}
+		@include tab {
+			width: respx(400);
+			margin: 0;
+		}
+
+		@include laptop-small {
+			width: respx(640);
 		}
 	}
 }
 
 .textLeft {
 	@include flex(column, center, center);
-
 	@include tab {
-		@include flex(row);
+		@include flex(row, center, center);
 	}
 
 	.slideText {
 		margin-bottom: respx(64);
-
 		@include tab {
 			margin-bottom: 0;
 		}
 
 		.text {
-			width: max-content;
-
+			text-align: center;
 			@include flex(column, center, center);
-
 			@include tab {
 				text-align: right;
 				margin-right: respx(64);
-				@include flex(column, end);
+				@include flex(column, flex-end);
 			}
 		}
 	}
@@ -95,24 +99,24 @@
 
 .textRight {
 	@include flex(column, center, center);
-
 	@include tab {
 		@include flex(row, center, center);
 	}
 
 	.slideText {
 		order: 1;
+		margin-bottom: respx(64);
+		@include tab {
+			margin-bottom: 0;
+		}
 
 		.text {
-			width: max-content;
-			margin-top: respx(64);
-
+			text-align: center;
 			@include flex(column, center, center);
-
 			@include tab {
-				@include flex(column, start);
-				margin-left: respx(64);
-				margin-top: 0;
+				text-align: left;
+				margin-right: respx(64);
+				@include flex(column, flex-start);
 			}
 		}
 	}
