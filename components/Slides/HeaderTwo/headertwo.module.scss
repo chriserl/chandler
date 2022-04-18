@@ -1,0 +1,91 @@
+@import "../../../scss/utilities";
+@import "../../../scss/variables";
+
+.headerContainer {
+	--primary-color: hsl(24, 100%, 50%);
+	--secondary-color: hsl(40, 100%, 50%);
+	--gray: hsl(30, 24%, 80%);
+	--gradient: linear-gradient(var(--primary-color), var(--secondary-color));
+	width: 100%;
+	height: 94vh;
+	padding-bottom: respx(112);
+	margin: 0 auto;
+	line-height: 1;
+	background: url("../../../public/images/headertwobg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include flex(row, end);
+
+	@include phone-large {
+		height: 90vh;
+		padding-bottom: respx(112);
+	}
+
+	@include tab {
+		height: 94vh;
+		padding: 0 0 respx(144) respx(80);
+	}
+
+	@include laptop-small {
+		height: 94vh;
+		padding: 0 0 respx(144) respx(160);
+	}
+
+	.headerContent {
+		width: max-content;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, auto-fit);
+		grid-template-rows: repeat(4, auto-fit);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+
+		@include tab {
+			margin: 0;
+		}
+	}
+
+	.upcoming {
+		grid-area: 1 / 2 / 2 / 3;
+		margin-bottom: respx(4);
+		color: $gray-01;
+	}
+	.time {
+		width: fit-content;
+		grid-area: 2 / 1 / 3 / 2;
+		margin-right: respx(14);
+		padding-top: respx(5.8);
+		color: $gray-00;
+
+		.timegmt {
+			margin-bottom: respx(4.8);
+		}
+	}
+	.name {
+		grid-area: 2 / 2 / 3 / 3;
+		margin-bottom: respx(6);
+		background: -webkit-linear-gradient(--primary-color, --secondary-color);
+		background: var(--gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.theme {
+		grid-area: 3 / 2 / 4 / 3;
+		color: var(--gray);
+	}
+	.action {
+		grid-area: 4 / 2 / 5 / 3;
+		margin-top: respx(40);
+
+		.actionBtn {
+			@include flex(row, center, center);
+			color: var(--primary-color);
+			outline: none;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}
