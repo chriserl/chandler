@@ -5,6 +5,7 @@
 	width: 100%;
 	padding: respx(96) 0 respx(120) 0;
 	background-color: $gray-00;
+	text-align: center;
 	@include flex(column, center, center);
 
 	.title {
@@ -15,5 +16,18 @@
 	.description {
 		color: $black-01;
 		margin-bottom: respx(48);
+		max-width: 64%;
+
+		@include tab {
+			max-width: 48%;
+		}
+
+		@include laptop-small {
+			max-width: 32%;
+		}
+
+		@include laptop-large {
+			max-width: 24%;
+		}
 	}
 }
