@@ -7,8 +7,8 @@
 	--gray: hsl(30, 24%, 80%);
 	--gradient: linear-gradient(var(--primary-color), var(--secondary-color));
 	width: 100%;
-	height: 94vh;
-	padding-bottom: respx(112);
+	height: 100vh;
+	padding-bottom: 12vh;
 	margin: 0 auto;
 	line-height: 1;
 	background: url("../../../public/images/home/headertwobg.jpg");
@@ -17,19 +17,30 @@
 	background-size: cover;
 	@include flex(row, flex-end);
 
-	@include phone-large {
-		height: 90vh;
-		padding-bottom: respx(112);
+	@include short-height {
+		height: 78vh;
+		padding-bottom: respx(140);
+	}
+
+	@include regular-height {
+		height: 72vh;
+	}
+
+	@include medium-height {
+		height: 75vh;
 	}
 
 	@include tab {
-		height: 94vh;
-		padding: 0 0 respx(144) respx(80);
+		padding: 0 0 12vh respx(96);
 	}
 
 	@include laptop-small {
-		height: 94vh;
+		height: 100vh;
 		padding: 0 0 respx(144) respx(160);
+	}
+
+	@include xxxlarge-height {
+		height: 68vh;
 	}
 
 	.headerContent {
