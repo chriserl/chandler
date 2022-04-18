@@ -1,15 +1,14 @@
 import { Link } from "./Link";
 import { IconButton } from "./Button";
-import HeaderTwo from "../../../components/Slides/HeaderTwo/HeaderTwo";
 import type { ReactChildren } from "react";
 import { Icon } from "./Icon";
 
-export interface SlideContainer {
+export interface SlidesContainerData {
 	flow: "column" | "row";
 	shade: "light" | "gray";
 }
 
-export interface GenericSlide {
+export interface GenericSlideData {
 	shade: "light" | "transparent";
 }
 
@@ -23,30 +22,30 @@ export interface DefaultSlideData {
 	buttonData?: IconButton;
 }
 
-export interface HeaderTwo extends DefaultSlideData {
+export interface HeaderTwoData extends DefaultSlideData {
 	time: { timegmt: string; day: string };
 }
 
-export interface SlideOne extends DefaultSlideData {
+export interface SlideOneData extends DefaultSlideData {
 	shade: "light" | "transparent";
 	textPosition: "textTop" | "textBottom";
 }
 
-export interface SlideTwo extends DefaultSlideData {
+export interface SlideTwoData extends DefaultSlideData {
 	shade: "light" | "transparent";
 	textPosition: "textRight" | "textLeft";
 }
 
-export interface SlideThree extends DefaultSlideData {
+export interface SlideThreeData extends DefaultSlideData {
 	shade: "light" | "transparent";
 	alignment: "right" | "left";
 }
 
-export interface SlideFour extends DefaultSlideData {
+export interface SlideFourData extends DefaultSlideData {
 	children: ReactChildren;
 	shade: "light" | "transparent";
 }
 
-export interface SlideSix extends DefaultSlideData {
+export interface SlideSixData extends DefaultSlideData {
 	iconData?: Icon;
 }

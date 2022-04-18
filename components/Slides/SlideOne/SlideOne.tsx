@@ -1,10 +1,10 @@
 import type { FC } from "react";
-import { SlideOne } from "../../../utils/interfaces/Components/Slides";
+import { SlideOneData } from "../../../utils/interfaces/Components/Slides";
 import GenericSlide from "../GenericSlide/GenericSlide";
 import slide from "./slideone.module.scss";
 import { Link } from "../../Interactive/Link/Link";
 
-const SlideOne: FC<SlideOne> = ({
+const SlideOne: FC<SlideOneData> = ({
 	shade,
 	textPosition,
 	image,

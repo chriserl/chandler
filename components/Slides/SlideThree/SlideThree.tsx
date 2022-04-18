@@ -1,9 +1,9 @@
 import type { FC } from "react";
-import { SlideThree } from "../../../utils/interfaces/Components/Slides";
+import { SlideThreeData } from "../../../utils/interfaces/Components/Slides";
 import GenericSlide from "../GenericSlide/GenericSlide";
 import slide from "./slidethree.module.scss";
 
-const SlideThree: FC<SlideThree> = ({
+const SlideThree: FC<SlideThreeData> = ({
 	shade,
 	alignment,
 	image,

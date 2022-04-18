@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import headerStyles from "./headertwo.module.scss";
-import { HeaderTwo } from "../../../utils/interfaces/Components/Slides";
+import { HeaderTwoData } from "../../../utils/interfaces/Components/Slides";
 
-const HeaderTwo: NextPage<HeaderTwo> = ({
+const HeaderTwo: NextPage<HeaderTwoData> = ({
 	caption,
 	title,
 	description,

@@ -1,9 +1,9 @@
 import type { FC } from "react";
 import GenericSlide from "../GenericSlide/GenericSlide";
 import slide from "./slidefour.module.scss";
-import { SlideFour } from "../../../utils/interfaces/Components/Slides";
+import { SlideFourData } from "../../../utils/interfaces/Components/Slides";
 
-const SlideFour: FC<SlideFour> = ({ children, shade }) => {
+const SlideFour: FC<SlideFourData> = ({ children, shade }) => {
 	return (
 		<GenericSlide shade={shade}>
 			<div className={slide.slide}>
