@@ -2,26 +2,25 @@ import type { FC } from "react";
 import GenericSlide from "../GenericSlide/GenericSlide";
 import { Icon } from "../../Interactive/Icon/Icon";
 import slide from "./slidesix.module.scss";
+import { SlideSix } from "../../../utils/interfaces/Components/Slides";
 
-const SlideSix: FC = () => {
+const SlideSix: FC<SlideSix> = ({ iconData, title, description, extra }) => {
 	return (
 		<GenericSlide shade="light">
 			<div className={slide.slide}>
-				<Icon
-					name="bookmark"
-					size="xxlarge"
-					padding={false}
-					weight="solid"
-					color="black"
-				/>
-				<p className={`heading-4 ${slide["title"]}`}>Verse of the day</p>
+				{iconData && (
+					<Icon
+						name={iconData.name}
+						size={iconData.size}
+						padding={false}
+						weight={iconData.weight}
+						color={iconData.color}
+					/>
+				)}
+				<p className={`heading-4 ${slide["title"]}`}>{title}</p>
 				<div className={slide["mainTextArea"]}>
-					<p className={`title-1 ${slide["mainText"]}`}>
-						"Blessed are they that mourn: for they shall be comforted"
-					</p>
-					<p className={`caption-2 ${slide.details}`}>
-						Matthew 4:3 {`[King James Version]`}
-					</p>
+					<p className={`title-1 ${slide["description"]}`}>{description}</p>
+					<p className={`caption-2 ${slide.extra}`}>{extra}</p>
 				</div>
 			</div>
 		</GenericSlide>

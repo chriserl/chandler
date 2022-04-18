@@ -4,35 +4,38 @@ import GenericSlide from "../GenericSlide/GenericSlide";
 import slide from "./slidetwo.module.scss";
 import { Link } from "../../Interactive/Link/Link";
 
-const SlideTwo: FC<SlideTwo> = ({ shade, textPosition }) => {
+const SlideTwo: FC<SlideTwo> = ({
+	shade,
+	textPosition,
+	image,
+	caption,
+	title,
+	description,
+	extra,
+	linkData,
+}) => {
 	return (
 		<GenericSlide shade={shade}>
 			<div className={`${slide.slide} ${slide[textPosition]}`}>
 				<div className={slide.slideText}>
 					<div className={slide.text}>
-						<p className={`${slide.caption} caption-2`}></p>
-						<p className={`${slide.title} title-3`}>Messages</p>
-						<p className={`${slide.description} heading-4`}>
-							Listen to recorded messages <br /> from our meetings right here{" "}
-							<br />
-							or on your fave podcast app.
-						</p>
-						<p className={`${slide.extra} body`}></p>
-						<Link
-							label="Listen now"
-							url="#"
-							icon="chevron-right"
-							size="body"
-							iconSize="medium"
-						/>
+						<p className={`${slide.caption} caption-2`}>{caption}</p>
+						<p className={`${slide.title} title-3`}>{title}</p>
+						<p className={`${slide.description} heading-4`}>{description}</p>
+						<p className={`${slide.extra} body`}>{extra}</p>
+						{linkData && (
+							<Link
+								label={linkData.label}
+								url={linkData.url}
+								icon={linkData.icon}
+								size={linkData.size}
+								iconSize={linkData.iconSize}
+							/>
+						)}
 					</div>
 				</div>
 				<div className={slide.imageContainer}>
-					<img
-						src="/images/slideimage.jpg"
-						alt="slide Image"
-						className={slide.image}
-					/>
+					<img src={image} alt={title} className={slide.image} />
 				</div>
 			</div>
 		</GenericSlide>
