@@ -91,3 +91,24 @@
 		@include d-none;
 	}
 }
+
+.dark {
+	background-color: rgba(0, 0, 0, 0.64);
+	border-bottom: 1px solid $black-05;
+
+	.mainContainer {
+		.navLeft {
+			.brand {
+				color: $gray-00;
+			}
+
+			.tabLinks {
+				.navItem {
+					a {
+						color: $gray-04;
+					}
+				}
+			}
+		}
+	}
+}

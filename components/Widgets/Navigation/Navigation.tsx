@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 import nav from "./navigation.module.scss";
 import { MobileNavState } from "../../../utils/interfaces/Components/Navigation";
+import { NavTheme } from "../../../utils/interfaces/Components/Navigation";
 import { useState } from "react";
 import { IconButton } from "../../Interactive/Button/Button";
 
@@ -54,7 +55,7 @@ const MobileLinks: FC<MobileNavState> = ({ open }) => {
 	);
 };
 
-const Navigation: FC = () => {
+const Navigation: FC<NavTheme> = ({ theme }) => {
 	let [mobileOpen, setMobileOpen] = useState(() => false);
 
 	const toggleMobileState = () => {
@@ -62,7 +63,7 @@ const Navigation: FC = () => {
 	};
 
 	return (
-		<nav className={nav.nav}>
+		<nav className={`${nav.nav} ${theme && nav[theme]}`}>
 			<div className={nav.mainContainer}>
 				<div className={nav.navLeft}>
 					<Link href="/">
