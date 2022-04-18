@@ -1,5 +1,6 @@
 import { Link } from "./Link";
 import { IconButton } from "./Button";
+import HeaderTwo from "../../../components/Slides/HeaderTwo/HeaderTwo";
 
 export interface SlideContainer {
 	flow: "column" | "row";
@@ -18,6 +19,10 @@ export interface DefaultSlideData {
 	extra?: string | number;
 	linkData?: Link;
 	buttonData?: IconButton;
+}
+
+export interface HeaderTwo extends DefaultSlideData {
+	time: { timegmt: string; day: string };
 }
 
 export interface SlideOne {
