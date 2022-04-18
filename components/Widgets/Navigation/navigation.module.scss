@@ -96,6 +96,17 @@
 	background-color: rgba(0, 0, 0, 0.64);
 	border-bottom: 1px solid $black-05;
 
+	.mobileLinks {
+		.navItem {
+			.navLink {
+				width: 100%;
+				padding: respx(12) 0;
+				color: $gray-04;
+				border-bottom: 0.8px solid $black-01;
+			}
+		}
+	}
+
 	.mainContainer {
 		.navLeft {
 			.brand {
