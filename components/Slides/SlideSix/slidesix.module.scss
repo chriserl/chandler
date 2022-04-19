@@ -3,6 +3,7 @@
 
 .slide {
 	text-align: center;
+	width: 100%;
 
 	.title {
 		margin-top: respx(14);
@@ -11,9 +12,11 @@
 	}
 
 	.mainTextArea {
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
-
+		@include tab {
+			width: 56%;
+		}
 		@include laptop-small {
 			width: 36%;
 		}

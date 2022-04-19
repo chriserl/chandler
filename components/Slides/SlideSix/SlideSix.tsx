@@ -24,7 +24,9 @@ const SlideSix: FC<SlideSixData> = ({
 				)}
 				<p className={`heading-4 ${slide["title"]}`}>{title}</p>
 				<div className={slide["mainTextArea"]}>
-					<p className={`title-1 ${slide["description"]}`}>{description}</p>
+					<p className={`title-1-bold ${slide["description"]}`}>
+						{description}
+					</p>
 					<p className={`caption-2 ${slide.extra}`}>{extra}</p>
 				</div>
 			</div>
