@@ -5,8 +5,11 @@
 	width: 100%;
 	height: max-content;
 	border-radius: respx(8);
-	padding: respx(112) respx(16) respx(120) respx(16);
+	padding: respx(64) respx(16) respx(64) respx(16);
 	margin-bottom: respx(8);
+	@include tab {
+		padding: respx(112) respx(16) respx(120) respx(16);
+	}
 }
 
 .light {
