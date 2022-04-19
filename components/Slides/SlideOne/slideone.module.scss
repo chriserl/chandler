@@ -6,7 +6,18 @@
 	margin: 0 auto;
 
 	.slideText {
+		width: 92%;
+		@include tab {
+			width: 36%;
+		}
+		@include laptop-small {
+			width: 28%;
+		}
+
 		.text {
+			width: 100%;
+			text-align: center;
+
 			.caption {
 				background: $gradient-color;
 				margin-bottom: respx(8);
@@ -59,11 +70,10 @@
 }
 
 .textBottom {
-	@include flex(column);
+	@include flex(column-reverse);
 
 	.slideText {
-		margin-top: respx(64);
-		order: 1;
+		margin-top: respx(16);
 
 		.text {
 			@include flex(column, center);
