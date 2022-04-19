@@ -15,6 +15,10 @@
 			width: 36%;
 		}
 		@include laptop-small {
+			width: 24%;
+		}
+
+		@include laptop-large {
 			width: 20%;
 		}
 		.text {
@@ -56,10 +60,6 @@
 		.image {
 			width: 100%;
 			height: auto;
-
-			@include tab {
-				width: 100%;
-			}
 		}
 
 		@include tab {
@@ -76,7 +76,7 @@
 .textLeft {
 	@include flex(column-reverse, flex-start, center);
 	@include tab {
-		@include flex(row-reverse);
+		@include flex(row);
 	}
 
 	.slideText {
