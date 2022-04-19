@@ -10,7 +10,7 @@
 	}
 
 	.slideText {
-		width: 58%;
+		width: 92%;
 		@include tab {
 			width: 36%;
 		}
@@ -37,7 +37,7 @@
 			}
 			.extra {
 				color: $black-06;
-				margin-bottom: respx(24);
+				margin-bottom: respx(14);
 
 				@include tab {
 					margin-bottom: respx(24);
@@ -74,20 +74,20 @@
 }
 
 .textLeft {
-	@include flex(column, center, center);
+	@include flex(column-reverse, flex-start, center);
 	@include tab {
-		@include flex(row, center, center);
+		@include flex(row-reverse);
 	}
 
 	.slideText {
-		margin-bottom: respx(64);
+		margin-top: respx(20);
 		@include tab {
-			margin-bottom: 0;
+			margin-top: 0;
 		}
 
 		.text {
-			text-align: center;
-			@include flex(column, center, center);
+			text-align: left;
+			@include flex(column, flex-start, center);
 			@include tab {
 				text-align: right;
 				margin-right: respx(64);
@@ -98,21 +98,20 @@
 }
 
 .textRight {
-	@include flex(column, center, center);
+	@include flex(column-reverse, flex-end, center);
 	@include tab {
-		@include flex(row, center, center);
+		@include flex(row-reverse, center, center);
 	}
 
 	.slideText {
-		order: 1;
-		margin-bottom: respx(64);
+		margin-top: respx(20);
 		@include tab {
-			margin-bottom: 0;
+			margin-top: 0;
 		}
 
 		.text {
-			text-align: center;
-			@include flex(column, center, center);
+			text-align: right;
+			@include flex(column, flex-end, center);
 			@include tab {
 				text-align: left;
 				margin-right: respx(64);
