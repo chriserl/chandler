@@ -7,12 +7,7 @@
 }
 
 :root {
-	font-size: calc(8px + 0.28vw);
-
-	@media screen and (min-width: 375px) {
-		font-size: calc(8px + 0.64vw);
-	}
-
+	font-size: calc(14px + 0.32vh);
 	@media screen and (min-width: 600px) {
 		font-size: calc(14px + 0.098vw);
 	}
@@ -34,11 +29,12 @@ a {
 }
 
 /*Font import*/
-@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
 
 body {
 	font-family: Inter, Helvetica, -apple-system, SF Pro Display, San Francisco,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
 		"Open Sans", "Helvetica Neue", sans-serif;
+	letter-spacing: -0.3px;
 }

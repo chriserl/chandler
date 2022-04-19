@@ -2,12 +2,24 @@
 	@include title-1;
 }
 
+.title-1-bold {
+	@include title-1-bold;
+}
+
 .title-2 {
 	@include title-2;
 }
 
+.title-2-bold {
+	@include title-2-bold;
+}
+
 .title-3 {
 	@include title-3;
+}
+
+.title-3-bold {
+	@include title-3-bold;
 }
 
 .heading-1 {
