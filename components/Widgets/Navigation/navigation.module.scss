@@ -7,13 +7,16 @@
 	left: 0;
 	right: 0;
 	width: 100vw;
-	border-bottom: 1px solid $gray-02;
-	background-color: rgba(255, 255, 255, 0.64);
+	border-bottom: 1px solid $gray-04;
+	background-color: hsla(0, 0%, 100%, 0.9);
 	backdrop-filter: blur(48px);
 
 	.mainContainer {
-		padding: respx(10) respx(24);
+		padding: respx(12) respx(14);
 		@include flex(row, center, space-between);
+		@include tab {
+			padding: respx(8) respx(24);
+		}
 
 		.navLeft {
 			@include flex(row, center, center);
@@ -59,11 +62,10 @@
 	}
 
 	.mobileLinks {
-		width: 92%;
+		width: 96%;
 		margin: respx(24) auto respx(54);
 		padding: 0 respx(24);
 		@include flex(column, center, center);
-
 		@include tab {
 			@include d-none;
 		}
@@ -75,7 +77,7 @@
 				width: 100%;
 				padding: respx(12) 0;
 				color: $black-02;
-				border-bottom: 0.8px solid $gray-02;
+				border-bottom: 0.8px solid $gray-04;
 			}
 		}
 
@@ -94,8 +96,8 @@
 }
 
 .dark {
-	background-color: rgba(0, 0, 0, 0.64);
-	border-bottom: 1px solid $black-05;
+	background-color: rgba(0, 0, 0, 0.9);
+	border-bottom: 1px solid $black-02;
 
 	.mobileLinks {
 		.navItem {
@@ -103,7 +105,7 @@
 				width: 100%;
 				padding: respx(12) 0;
 				color: $gray-04;
-				border-bottom: 0.8px solid $black-01;
+				border-bottom: 0.8px solid $black-03;
 			}
 		}
 	}
