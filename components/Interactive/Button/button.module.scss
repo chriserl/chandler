@@ -1,14 +1,6 @@
 @import "../../../scss/variables";
 @import "../../../scss/utilities";
 
-.button {
-	@include flex(row, center, center);
-	outline: none;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-}
-
 .transparent + .primary {
 	color: $primary-color;
 }
@@ -17,10 +9,6 @@
 	color: $gray-06;
 }
 
-.textButton {
-	@extend .button;
-}
-
-.iconButton {
-	@extend .button;
+.transparent + .white {
+	color: $gray-00;
 }

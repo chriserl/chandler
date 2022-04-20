@@ -38,3 +38,14 @@ body {
 		"Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: -0.3px;
 }
+
+button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}

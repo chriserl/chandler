@@ -76,8 +76,9 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 						<IconButton
 							icon={mobileOpen ? "x" : "dots-vertical-rounded"}
 							weight="solid"
-							color={theme === "dark" ? "gray" : "black"}
+							iconColor={theme === "dark" ? "gray" : "black"}
 							iconSize="medium"
+							color="gray"
 							label=""
 							size="body"
 							clickFunction={toggleMobileState}
