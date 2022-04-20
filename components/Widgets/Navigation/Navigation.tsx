@@ -48,7 +48,7 @@ const MobileLinks: FC<MobileNavState> = ({ open }) => {
 			</li>
 			<li className={nav.navItem}>
 				<Link href="/">
-					<a className={`${nav.navLink} body`}>Donate</a>
+					<a className={`${nav.navLink} caption-1`}>Donate</a>
 				</Link>
 			</li>
 		</ul>
@@ -67,7 +67,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 			<div className={nav.mainContainer}>
 				<div className={nav.navLeft}>
 					<Link href="/">
-						<a className={`${nav.brand} body-bold`}>Chandler</a>
+						<a className={`${nav.brand} body-bold`}>iOS</a>
 					</Link>
 					<TabLinks />
 				</div>
@@ -76,7 +76,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 						<IconButton
 							icon={mobileOpen ? "x" : "dots-vertical-rounded"}
 							weight="solid"
-							color={theme === "dark" ? "white" : "black"}
+							color={theme === "dark" ? "gray" : "black"}
 							iconSize="medium"
 							label=""
 							size="body"

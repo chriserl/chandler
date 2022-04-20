@@ -12,7 +12,7 @@
 	backdrop-filter: blur(48px);
 
 	.mainContainer {
-		padding: respx(12) respx(14);
+		padding: respx(12) respx(16);
 		@include flex(row, center, space-between);
 		@include tab {
 			padding: respx(8) respx(24);
@@ -113,7 +113,7 @@
 	.mainContainer {
 		.navLeft {
 			.brand {
-				color: $gray-00;
+				color: $gray-02;
 			}
 
 			.tabLinks {
