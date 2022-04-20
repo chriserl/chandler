@@ -3,5 +3,5 @@ export interface Icon {
 	padding: false | true;
 	weight: "line" | "solid";
 	size: "small" | "regular" | "medium" | "large" | "xlarge" | "xxlarge";
-	color?: "primary" | "secondary" | "gray" | "black";
+	color?: "white" | "primary" | "secondary" | "gray" | "black";
 }
