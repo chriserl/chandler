@@ -60,6 +60,8 @@
 		.image {
 			width: 100%;
 			height: auto;
+			border-radius: respx(8);
+			box-shadow: respx(-1) 0 respx(24) 0 rgba(0, 0, 0, 0.072);
 		}
 
 		@include tab {
@@ -80,9 +82,10 @@
 	}
 
 	.slideText {
-		margin-top: respx(20);
+		margin-top: respx(28);
 		@include tab {
 			margin-top: 0;
+			margin-right: respx(40);
 		}
 
 		.text {
@@ -90,7 +93,6 @@
 			@include flex(column, flex-start, center);
 			@include tab {
 				text-align: right;
-				margin-right: respx(64);
 				@include flex(column, flex-end);
 			}
 		}
@@ -104,9 +106,10 @@
 	}
 
 	.slideText {
-		margin-top: respx(20);
+		margin-top: respx(28);
 		@include tab {
 			margin-top: 0;
+			margin-left: respx(40);
 		}
 
 		.text {
@@ -114,7 +117,6 @@
 			@include flex(column, flex-end, center);
 			@include tab {
 				text-align: left;
-				margin-right: respx(64);
 				@include flex(column, flex-start);
 			}
 		}

@@ -20,7 +20,7 @@ const SlideTwo: FC<SlideTwoData> = ({
 				<div className={slide.slideText}>
 					<div className={slide.text}>
 						<p className={`${slide.caption} caption-2`}>{caption}</p>
-						<p className={`${slide.title} title-3`}>{title}</p>
+						<p className={`${slide.title} heading-1-bold`}>{title}</p>
 						<p className={`${slide.description} heading-4`}>{description}</p>
 						<p className={`${slide.extra} body`}>{extra}</p>
 						{linkData && (
