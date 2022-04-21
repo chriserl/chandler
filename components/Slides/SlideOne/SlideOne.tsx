@@ -19,7 +19,7 @@ const SlideOne: FC<SlideOneData> = ({
 				<div className={slide.slideText}>
 					<div className={slide.text}>
 						<p className={`${slide.caption} caption-2`}>{caption}</p>
-						<p className={`${slide.title} title-3`}>{title}</p>
+						<p className={`${slide.title} heading-2-bold`}>{title}</p>
 						<p className={`${slide.description} heading-4`}>{description}</p>
 						{linkData && (
 							<Link

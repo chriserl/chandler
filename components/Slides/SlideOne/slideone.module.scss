@@ -45,6 +45,7 @@
 		.image {
 			width: 100%;
 			height: auto;
+			object-fit: cover;
 
 			@include tab {
 				width: respx(400);
@@ -61,7 +62,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-bottom: respx(64);
+		margin-bottom: respx(28);
 
 		.text {
 			@include flex(column, center);
@@ -73,7 +74,7 @@
 	@include flex(column-reverse);
 
 	.slideText {
-		margin-top: respx(16);
+		margin-top: respx(28);
 
 		.text {
 			@include flex(column, center);
