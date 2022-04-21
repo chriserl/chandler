@@ -22,10 +22,6 @@ export interface DefaultSlideData {
 	buttonData?: IconButton;
 }
 
-export interface HeaderTwoData extends DefaultSlideData {
-	time: { timegmt: string; day: string };
-}
-
 export interface SlideOneData extends DefaultSlideData {
 	shade: "light" | "transparent";
 	textPosition: "textTop" | "textBottom";

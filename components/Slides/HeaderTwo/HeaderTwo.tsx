@@ -1,32 +1,30 @@
 import type { NextPage } from "next";
 import headerStyles from "./headertwo.module.scss";
-import { HeaderTwoData } from "../../../utils/interfaces/Components/Slides";
+import { DefaultSlideData } from "../../../utils/interfaces/Components/Slides";
 
-const HeaderTwo: NextPage<HeaderTwoData> = ({
+const HeaderTwo: NextPage<DefaultSlideData> = ({
 	caption,
 	title,
 	description,
-	time,
 }) => {
 	return (
 		<div className={headerStyles.headerContainer}>
 			<div className={headerStyles.headerContent}>
-				<div className={headerStyles.upcoming}>
-					<p className="caption-2">{caption}</p>
-				</div>
-				<div className={headerStyles.time}>
-					<p className={`caption-3 ${headerStyles.timegmt}`}>{time.timegmt}</p>
-					<p className={`caption-3 ${headerStyles.day}`}>{time.day}</p>
+				<div className={headerStyles.caption}>
+					<p className="caption-2-bold">{caption}</p>
 				</div>
 				<div className={headerStyles.name}>
-					<p className="title-1">{title}</p>
+					<p className="title-2">{title}</p>
 				</div>
 				<div className={headerStyles.theme}>
-					<p className="heading-2">{description}</p>
+					<p className="heading-3">{description}</p>
 				</div>
 				<div className={headerStyles.action}>
-					<button className={headerStyles.actionBtn}>
-						Details <i className={`bx bx-plus ${headerStyles.detailsIcon}`}></i>
+					<button className={`caption-1 ${headerStyles.actionBtn}`}>
+						Details
+						<i
+							className={`bx bx-plus ${headerStyles.detailsIcon} caption-2`}
+						></i>
 					</button>
 				</div>
 			</div>
