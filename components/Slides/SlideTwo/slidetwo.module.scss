@@ -10,17 +10,8 @@
 	}
 
 	.slideText {
-		width: 92%;
-		@include tab {
-			width: 36%;
-		}
-		@include laptop-small {
-			width: 24%;
-		}
+		width: max-content;
 
-		@include laptop-large {
-			width: 20%;
-		}
 		.text {
 			width: 100%;
 
@@ -38,6 +29,7 @@
 			.description {
 				margin-bottom: respx(28);
 				color: $black-01;
+				@include linebreak;
 			}
 			.extra {
 				color: $black-06;

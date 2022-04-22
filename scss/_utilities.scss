@@ -24,6 +24,11 @@
 	display: none;
 }
 
+//Linebreak
+@mixin linebreak {
+	white-space: pre-line;
+}
+
 //Media Queries
 @mixin phone-large {
 	@media screen and (min-width: 414px) {
