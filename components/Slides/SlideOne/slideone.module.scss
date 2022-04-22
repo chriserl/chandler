@@ -37,6 +37,7 @@
 			.description {
 				margin-bottom: respx(24);
 				color: $black-01;
+				@include linebreak;
 			}
 		}
 	}
