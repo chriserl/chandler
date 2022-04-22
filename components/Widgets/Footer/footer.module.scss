@@ -8,7 +8,7 @@
 	color: $gray-06;
 
 	.main {
-		width: 90%;
+		width: 96%;
 		margin: 0 auto;
 		flex-wrap: wrap;
 		@include flex(row, start, space-between);
@@ -16,18 +16,33 @@
 			width: 56%;
 		}
 
-		a {
-			margin-bottom: respx(20);
+		.socials,
+		.podcasts,
+		.org {
+			@include flex(column, flex-start);
+
+			.link {
+				margin-bottom: respx(20);
+
+				a {
+					color: $gray-06;
+					margin-right: respx(3.2);
+				}
+
+				i {
+					color: $gray-06;
+				}
+			}
 		}
 	}
 
 	.copyright {
 		text-align: center;
-		margin-top: respx(56);
-		@include flex(row, center, center);
+		margin-top: respx(32);
+		@include flex(column, center, center);
 
 		.designer {
-			margin-right: respx(40);
+			margin-bottom: respx(4);
 
 			.link {
 				display: inline;

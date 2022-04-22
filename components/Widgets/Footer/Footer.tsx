@@ -1,42 +1,52 @@
 import { FC } from "react";
+import { Link } from "../../Interactive/Link/Link";
 import footer from "./footer.module.scss";
 
 const Footer: FC = () => {
 	return (
 		<div className={footer.footer}>
 			<div className={footer.main}>
-				<div className={`${footer.socials} caption-2`}>
-					<a href="/" className={footer.social}>
-						Instagram
-					</a>
-					<a href="/" className={footer.social}>
-						Facebook
-					</a>
-					<a href="/" className={footer.social}>
-						WhatsApp
-					</a>
+				<div className={`${footer.socials}`}>
+					{["Instagram", "Facebook", "WhatsApp"].map((socialLink) => (
+						<div className={footer.link}>
+							<Link
+								label={socialLink}
+								url="/"
+								size="caption-3"
+								icon="link-external"
+								iconSize="small"
+							/>
+						</div>
+					))}
 				</div>
-				<div className={`${footer.podcasts} caption-2`}>
-					<a href="/" className={footer.podcast}>
-						Spotify
-					</a>
-					<a href="/" className={footer.podcast}>
-						Podbean
-					</a>{" "}
-					<a href="/" className={footer.podcast}>
-						Apple Podcasts
-					</a>
+				<div className={footer.podcasts}>
+					{["Spotify", "Podbean", "Apple Podcasts"].map((podLink) => (
+						<div className={footer.link}>
+							<Link
+								label={podLink}
+								url="/"
+								size="caption-3"
+								icon="link-external"
+								iconSize="small"
+							/>
+						</div>
+					))}
 				</div>
-				<div className={`${footer.org} caption-2`}>
-					<a href="/" className={footer.org}>
-						Who are we
-					</a>
-					<a href="/" className={footer.org}>
-						Ongoing Projects
-					</a>
+				<div className={footer.org}>
+					{["Who are we", "Projects"].map((orgLink) => (
+						<div className={footer.link}>
+							<Link
+								label={orgLink}
+								url="/"
+								size="caption-3"
+								icon="link-external"
+								iconSize="small"
+							/>
+						</div>
+					))}
 				</div>
 			</div>
-			<div className={`${footer.copyright} caption-3`}>
+			<div className={`caption-3 ${footer.copyright}`}>
 				<p className={footer.designer}>
 					Designed and built by
 					<a href="/" className={footer.link}>
