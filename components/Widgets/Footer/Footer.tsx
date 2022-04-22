@@ -8,7 +8,7 @@ const Footer: FC = () => {
 			<div className={footer.main}>
 				<div className={`${footer.socials}`}>
 					{["Instagram", "Facebook", "WhatsApp"].map((socialLink) => (
-						<div className={footer.link}>
+						<div className={footer.link} key={socialLink}>
 							<Link
 								label={socialLink}
 								url="/"
@@ -21,7 +21,7 @@ const Footer: FC = () => {
 				</div>
 				<div className={footer.podcasts}>
 					{["Spotify", "Podbean", "Apple Podcasts"].map((podLink) => (
-						<div className={footer.link}>
+						<div className={footer.link} key={podLink}>
 							<Link
 								label={podLink}
 								url="/"
@@ -34,7 +34,7 @@ const Footer: FC = () => {
 				</div>
 				<div className={footer.org}>
 					{["Who are we", "Projects"].map((orgLink) => (
-						<div className={footer.link}>
+						<div className={footer.link} key={orgLink}>
 							<Link
 								label={orgLink}
 								url="/"

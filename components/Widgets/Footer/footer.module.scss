@@ -11,7 +11,7 @@
 		width: 96%;
 		margin: 0 auto;
 		flex-wrap: wrap;
-		@include flex(row, start, space-between);
+		@include flex(row, flex-start, space-between);
 		@include tab {
 			width: 56%;
 		}
