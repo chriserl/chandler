@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import nav from "./navigation.module.scss";
+import "animate.css";
 import { MobileNavState } from "../../../utils/interfaces/Components/Navigation";
 import { NavTheme } from "../../../utils/interfaces/Components/Navigation";
 import { useState } from "react";
@@ -8,7 +9,7 @@ import { IconButton } from "../../Interactive/Button/Button";
 
 const TabLinks: FC = () => {
 	return (
-		<ul className={`caption-3 ${nav.tabLinks}`}>
+		<ul className={`caption-2 ${nav.tabLinks}`}>
 			<li className={nav.navItem}>
 				<a href="/">Messages</a>
 			</li>
@@ -25,28 +26,20 @@ const TabLinks: FC = () => {
 const MobileLinks: FC<MobileNavState> = ({ open }) => {
 	return (
 		<ul
-			className={`${nav.mobileLinks} ${!open && nav.mobileNavClosed} caption-2`}
+			className={` ${nav.mobileLinks} ${
+				!open && nav.mobileNavClosed
+			} caption-2`}
 		>
-			<li className={nav.navItem}>
-				<a href="/" className={nav.navLink}>
-					Messages
-				</a>
-			</li>
-			<li className={nav.navItem}>
-				<a href="/" className={nav.navLink}>
-					Meetings
-				</a>
-			</li>
-			<li className={nav.navItem}>
-				<a href="/" className={nav.navLink}>
-					Who we are
-				</a>
-			</li>
-			<li className={nav.navItem}>
-				<Link href="/">
-					<a className={nav.navLink}>Donate</a>
-				</Link>
-			</li>
+			{["Messages", "Meetings", "Who are we", "Donate"].map((mobileLink) => (
+				<li className={nav.navItem} key={mobileLink}>
+					<a
+						href="/"
+						className={`animate__animated animate__fadeInDown animate__faster ${nav.navLink}`}
+					>
+						{mobileLink}
+					</a>
+				</li>
+			))}
 		</ul>
 	);
 };
