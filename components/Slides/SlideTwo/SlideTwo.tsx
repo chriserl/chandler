@@ -35,7 +35,7 @@ const SlideTwo: FC<SlideTwoData> = ({
 					</div>
 				</div>
 				<div className={slide.imageContainer}>
-					<img src={image} alt={title} className={slide.image} />
+					<img src={image} alt={title} className={slide.image} loading="lazy" />
 				</div>
 			</div>
 		</GenericSlide>

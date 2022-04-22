@@ -52,9 +52,11 @@
 		.image {
 			width: 100%;
 			height: auto;
-			object-fit: contain;
+			object-fit: cover;
 			border-radius: respx(8);
 			box-shadow: respx(-1) 0 respx(24) 0 rgba(0, 0, 0, 0.072);
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
 		}
 
 		@include tab {
