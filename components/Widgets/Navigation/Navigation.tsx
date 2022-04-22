@@ -8,21 +8,15 @@ import { IconButton } from "../../Interactive/Button/Button";
 
 const TabLinks: FC = () => {
 	return (
-		<ul className={nav.tabLinks}>
+		<ul className={`caption-3 ${nav.tabLinks}`}>
 			<li className={nav.navItem}>
-				<a href="/" className="caption-2">
-					Messages
-				</a>
+				<a href="/">Messages</a>
 			</li>
 			<li className={nav.navItem}>
-				<a href="/" className="caption-2">
-					Meetings
-				</a>
+				<a href="/">Meetings</a>
 			</li>
 			<li className={nav.navItem}>
-				<a href="/" className="caption-2">
-					Who we are
-				</a>
+				<a href="/">Who we are</a>
 			</li>
 		</ul>
 	);
@@ -30,25 +24,27 @@ const TabLinks: FC = () => {
 
 const MobileLinks: FC<MobileNavState> = ({ open }) => {
 	return (
-		<ul className={`${nav.mobileLinks} ${!open && nav.mobileNavClosed}`}>
+		<ul
+			className={`${nav.mobileLinks} ${!open && nav.mobileNavClosed} caption-2`}
+		>
 			<li className={nav.navItem}>
-				<a href="/" className={`${nav.navLink} caption-1`}>
+				<a href="/" className={nav.navLink}>
 					Messages
 				</a>
 			</li>
 			<li className={nav.navItem}>
-				<a href="/" className={`${nav.navLink}  caption-1`}>
+				<a href="/" className={nav.navLink}>
 					Meetings
 				</a>
 			</li>
 			<li className={nav.navItem}>
-				<a href="/" className={`${nav.navLink}  caption-1`}>
+				<a href="/" className={nav.navLink}>
 					Who we are
 				</a>
 			</li>
 			<li className={nav.navItem}>
 				<Link href="/">
-					<a className={`${nav.navLink} caption-1`}>Donate</a>
+					<a className={nav.navLink}>Donate</a>
 				</Link>
 			</li>
 		</ul>
@@ -86,7 +82,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 					</div>
 					<div className={nav.supportLink}>
 						<Link href="/">
-							<a className="caption-2">Donate</a>
+							<a className="caption-3">Donate</a>
 						</Link>
 					</div>
 				</div>
