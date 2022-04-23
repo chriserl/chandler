@@ -1,0 +1,16 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.alertmsg {
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+	padding: respx(12);
+	background: $black-06;
+	@include flex(row, center, center);
+
+	.msgText {
+		text-align: center;
+		color: $gray-04;
+	}
+}

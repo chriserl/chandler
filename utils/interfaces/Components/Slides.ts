@@ -45,3 +45,8 @@ export interface SlideFourData extends DefaultSlideData {
 export interface SlideSixData extends DefaultSlideData {
 	iconData?: Icon;
 }
+
+export interface AlertMessageData {
+	message: string;
+	visibilityDuration: number;
+}
