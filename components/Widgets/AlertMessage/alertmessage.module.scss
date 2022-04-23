@@ -4,7 +4,7 @@
 .alertmsg {
 	position: fixed;
 	z-index: 1;
-	width: 100vw;
+	width: 100%;
 	padding: respx(12);
 	background: $black-06;
 	@include flex(row, center, center);

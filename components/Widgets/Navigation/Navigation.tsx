@@ -6,6 +6,7 @@ import { MobileNavState } from "../../../utils/interfaces/Components/Navigation"
 import { NavTheme } from "../../../utils/interfaces/Components/Navigation";
 import { useState } from "react";
 import { IconButton } from "../../Interactive/Button/Button";
+import AlertMessage from "../AlertMessage/AlertMessage";
 
 const TabLinks: FC = () => {
 	return (
@@ -81,6 +82,10 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 				</div>
 			</div>
 			<MobileLinks open={mobileOpen} />
+			<AlertMessage
+				message="This website is still under construction. Features and links may not work as intended"
+				visibilityDuration={5500}
+			/>
 		</nav>
 	);
 };

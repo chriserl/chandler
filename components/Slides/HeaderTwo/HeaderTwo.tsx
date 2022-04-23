@@ -26,7 +26,7 @@ const HeaderTwo: FC<DefaultSlideData> = ({ caption, title, description }) => {
 				],
 			},
 			{
-				title: { titleText: "Zoom Details", action: "Click to copy" },
+				title: { titleText: "Zoom Details" },
 				details: [
 					{
 						value: "939 167 6823",

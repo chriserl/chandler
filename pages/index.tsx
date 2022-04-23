@@ -87,10 +87,7 @@ const Home: NextPage = () => {
 			</Head>
 			<main>
 				<Navigation theme="dark" />
-				<AlertMessage
-					message="This website is still under construction. Features and links may not work as intended"
-					visibilityDuration={5500}
-				/>
+
 				<HeaderTwo
 					caption={headerData.caption}
 					title={headerData.title}
