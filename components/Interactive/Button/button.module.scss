@@ -12,3 +12,15 @@
 .transparent + .white {
 	color: $gray-00;
 }
+
+.transparent {
+	.white {
+		color: $gray-00;
+	}
+}
+
+.iconLeft {
+	p {
+		order: 1;
+	}
+}

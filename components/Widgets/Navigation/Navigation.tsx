@@ -75,7 +75,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 					</div>
 					<div className={nav.supportLink}>
 						<Link href="/">
-							<a className="caption-3">Donate</a>
+							<a className="caption-2">Donate</a>
 						</Link>
 					</div>
 				</div>

@@ -1,0 +1,55 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.meetingDetails {
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(40px);
+	@include flex(column, center, center);
+
+	.detailsContainer {
+		width: 90%;
+		margin: 0 auto;
+		@include tab {
+			width: respx(400);
+		}
+
+		.detailSet {
+			margin-bottom: respx(40);
+
+			.title {
+				width: 100%;
+				margin: 0 auto respx(18);
+				padding: 0 respx(18);
+				@include flex(row, center, space-between);
+
+				.titleText {
+					color: $gray-04;
+				}
+
+				.action {
+					color: $gray-00;
+				}
+			}
+
+			.details {
+				border-radius: respx(12);
+				background-color: hsla(0, 0%, 4%, 0.72);
+
+				.detail {
+					width: 100%;
+					padding: respx(16) respx(18);
+					@include flex(row, center, space-between);
+
+					.value {
+						color: $gray-00;
+					}
+
+					.description {
+						color: $gray-06;
+					}
+				}
+			}
+		}
+	}
+}

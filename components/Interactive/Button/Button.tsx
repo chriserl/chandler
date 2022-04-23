@@ -6,12 +6,19 @@ import {
 import { Icon } from "../Icon/Icon";
 import button from "./button.module.scss";
 
-const TextButton: FC<TextButton> = ({ weight, size, label, color }) => {
+const TextButton: FC<TextButton> = ({
+	weight,
+	size,
+	label,
+	color,
+	clickFunction,
+}) => {
 	return (
 		<button
-			className={`${button.textButton} ${button[weight]} ${button[color]}`}
+			onClick={() => clickFunction && clickFunction()}
+			className={`${button.textButton} ${button[weight]}`}
 		>
-			<p className={`button.${size}`}>{label}</p>
+			<p className={`${size}  ${button[color]}`}>{label}</p>
 		</button>
 	);
 };
@@ -24,14 +31,17 @@ const IconButton: FC<IconButton> = ({
 	color,
 	icon,
 	iconColor,
+	iconPosition,
 	clickFunction,
 }) => {
 	return (
 		<button
-			className={`${button.iconButton} ${button[weight]} ${button[color]}`}
+			className={`${button.iconButton} ${button[weight]} ${
+				iconPosition && button[iconPosition]
+			}`}
 			onClick={() => clickFunction && clickFunction()}
 		>
-			<p className={`button.${size}`}>{label}</p>
+			<p className={`button.${size} ${button[color]}`}>{label}</p>
 			<Icon
 				name={icon}
 				size={iconSize}
