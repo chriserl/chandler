@@ -19,6 +19,7 @@ const ContactCard: FC = () => {
 					weight="transparent"
 					size="caption-1"
 					iconSize="medium"
+					iconColor="primary"
 					label="Call"
 					color="primary"
 				/>
