@@ -59,7 +59,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 			<div className={nav.mainContainer}>
 				<div className={nav.navLeft}>
 					<Link href="/">
-						<a className={`${nav.brand} body-bold`}>Youth Network Global</a>
+						<a className={`${nav.brand} body-bold`}>iOS</a>
 					</Link>
 					<TabLinks links={links} />
 				</div>
