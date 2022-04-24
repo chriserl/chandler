@@ -14,6 +14,7 @@ const HeaderTwo: FC<DefaultSlideData> = ({ caption, title, description }) => {
 	const meetingDetailsData: MeetingDetailsData = {
 		detailSet: [
 			{
+				title: { titleText: "Date & time" },
 				details: [
 					{
 						value: "Saturday, 23rd April",
