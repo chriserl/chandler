@@ -3,15 +3,19 @@ import { Link } from "../../Interactive/Link/Link";
 import footer from "./footer.module.scss";
 
 const Footer: FC = () => {
+	const socialLinks = ["Instagram", "Facebook", "WhatsApp"];
+	const podLinks = ["Spotify", "Podbean", "Apple Podcasts"];
+	const orgLinks = ["Who are we", "Projects"];
+
 	return (
 		<div className={footer.footer}>
 			<div className={footer.main}>
 				<div className={`${footer.socials}`}>
-					{["Instagram", "Facebook", "WhatsApp"].map((socialLink) => (
+					{socialLinks.map((socialLink) => (
 						<div className={footer.link} key={socialLink}>
 							<Link
 								label={socialLink}
-								url="/"
+								url={`/${socialLink}`}
 								size="caption-3"
 								icon="link-external"
 								iconSize="small"
@@ -20,11 +24,11 @@ const Footer: FC = () => {
 					))}
 				</div>
 				<div className={footer.podcasts}>
-					{["Spotify", "Podbean", "Apple Podcasts"].map((podLink) => (
+					{podLinks.map((podLink) => (
 						<div className={footer.link} key={podLink}>
 							<Link
 								label={podLink}
-								url="/"
+								url={`/${podLink}`}
 								size="caption-3"
 								icon="link-external"
 								iconSize="small"
@@ -33,11 +37,11 @@ const Footer: FC = () => {
 					))}
 				</div>
 				<div className={footer.org}>
-					{["Who are we", "Projects"].map((orgLink) => (
+					{orgLinks.map((orgLink) => (
 						<div className={footer.link} key={orgLink}>
 							<Link
 								label={orgLink}
-								url="/"
+								url={`/${orgLink}`}
 								size="caption-3"
 								icon="link-external"
 								iconSize="small"
@@ -49,7 +53,7 @@ const Footer: FC = () => {
 			<div className={`caption-3 ${footer.copyright}`}>
 				<p className={footer.designer}>
 					Designed and built by
-					<a href="/" className={footer.link}>
+					<a href="/merc" className={footer.link}>
 						Mercurial Studios
 					</a>
 				</p>
