@@ -23,7 +23,7 @@ const MeetingDetails: FC<MeetingDetailsData> = ({
 		<div className={details.meetingDetails}>
 			<div className={details.detailsContainer}>
 				{detailSet.map((detailItem) => (
-					<div className={details.detailSet}>
+					<div className={details.detailSet} key={detailItem.title.titleText}>
 						{detailItem.title && (
 							<div className={details.title}>
 								<p className={`caption-2 ${details.titleText}`}>
@@ -36,7 +36,11 @@ const MeetingDetails: FC<MeetingDetailsData> = ({
 						)}
 						<div className={details.details}>
 							{detailItem.details.map((detail) => (
-								<Detail value={detail.value} description={detail.description} />
+								<Detail
+									value={detail.value}
+									description={detail.description}
+									key={detail.description}
+								/>
 							))}
 						</div>
 					</div>

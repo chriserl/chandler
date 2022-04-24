@@ -1,5 +1,5 @@
 interface DetailSet {
-	title?: {
+	title: {
 		titleText: string;
 		action?: string;
 	};
