@@ -2,39 +2,40 @@ import Link from "next/link";
 import { FC } from "react";
 import nav from "./navigation.module.scss";
 import "animate.css";
-import { MobileNavState } from "../../../utils/interfaces/Components/Navigation";
+import {
+	LinksData,
+	MobileNavState,
+} from "../../../utils/interfaces/Components/Navigation";
 import { NavTheme } from "../../../utils/interfaces/Components/Navigation";
 import { useState } from "react";
 import { IconButton } from "../../Interactive/Button/Button";
 import AlertMessage from "../AlertMessage/AlertMessage";
 
-const TabLinks: FC = () => {
+const TabLinks: FC<LinksData> = ({ links }) => {
 	return (
 		<ul className={`caption-2 ${nav.tabLinks}`}>
-			<li className={nav.navItem}>
-				<a href="/">Messages</a>
-			</li>
-			<li className={nav.navItem}>
-				<a href="/">Meetings</a>
-			</li>
-			<li className={nav.navItem}>
-				<a href="/">Who we are</a>
-			</li>
+			{links
+				.filter((linkItem) => linkItem !== "donate")
+				.map((tabLink) => (
+					<li className={nav.navItem} key={tabLink}>
+						<a href={`/${tabLink}`}>{tabLink}</a>
+					</li>
+				))}
 		</ul>
 	);
 };
 
-const MobileLinks: FC<MobileNavState> = ({ open }) => {
+const MobileLinks: FC<MobileNavState> = ({ open, links }) => {
 	return (
 		<ul
 			className={` ${nav.mobileLinks} ${
 				!open && nav.mobileNavClosed
 			} caption-2`}
 		>
-			{["Messages", "Meetings", "Who are we", "Donate"].map((mobileLink) => (
+			{links.map((mobileLink) => (
 				<li className={nav.navItem} key={mobileLink}>
 					<a
-						href="/"
+						href={`/${mobileLink}`}
 						className={`animate__animated animate__fadeInDown animate__faster ${nav.navLink}`}
 					>
 						{mobileLink}
@@ -47,6 +48,7 @@ const MobileLinks: FC<MobileNavState> = ({ open }) => {
 
 const Navigation: FC<NavTheme> = ({ theme }) => {
 	let [mobileOpen, setMobileOpen] = useState(() => false);
+	const links: string[] = ["messages", "meetings", "who we are", "donate"];
 
 	const toggleMobileState = () => {
 		setMobileOpen(() => (mobileOpen ? false : true));
@@ -57,9 +59,9 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 			<div className={nav.mainContainer}>
 				<div className={nav.navLeft}>
 					<Link href="/">
-						<a className={`${nav.brand} body-bold`}>iOS</a>
+						<a className={`${nav.brand} body-bold`}>Youth Network Global</a>
 					</Link>
-					<TabLinks />
+					<TabLinks links={links} />
 				</div>
 				<div className={nav.navRight}>
 					<div className={nav.toggleBtn}>
@@ -81,7 +83,7 @@ const Navigation: FC<NavTheme> = ({ theme }) => {
 					</div>
 				</div>
 			</div>
-			<MobileLinks open={mobileOpen} />
+			<MobileLinks open={mobileOpen} links={links} />
 			<AlertMessage
 				message="This website is still under construction. Features and links may not work as intended"
 				visibilityDuration={5500}
