@@ -81,7 +81,7 @@ const Home: NextPage = () => {
 	return (
 		<div className={index.index}>
 			<Head>
-				<title>Chandler | Home</title>
+				<title>Youth Network Global</title>
 				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
