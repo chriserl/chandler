@@ -54,7 +54,7 @@ const Footer: FC = () => {
 				<p className={footer.designer}>
 					Designed and built by
 					<a href="/merc" className={footer.link}>
-						Mercurial Studios
+						Montara Studio
 					</a>
 				</p>
 				<p className={footer.copy}>Copyright &copy; Youth Network 2022</p>

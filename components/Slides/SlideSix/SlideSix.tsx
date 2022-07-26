@@ -22,7 +22,6 @@ const SlideSix: FC<SlideSixData> = ({
 						color={iconData.color}
 					/>
 				)}
-				<p className={`body-bold ${slide["title"]}`}>{title}</p>
 				<div className={slide["mainTextArea"]}>
 					<p className={`title-2-bold ${slide["description"]}`}>
 						{description}

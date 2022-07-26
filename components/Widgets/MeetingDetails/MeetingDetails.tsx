@@ -47,8 +47,8 @@ const MeetingDetails: FC<MeetingDetailsData> = ({
 				))}
 			</div>
 			<IconButton
-				label="Back"
-				icon="chevron-left"
+				label="Close"
+				icon="x"
 				iconSize="medium"
 				iconColor="white"
 				iconPosition="iconLeft"

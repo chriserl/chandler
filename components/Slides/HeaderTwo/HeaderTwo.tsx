@@ -52,10 +52,10 @@ const HeaderTwo: FC<DefaultSlideData> = ({ caption, title, description }) => {
 			{!detailsVisible ? (
 				<div className={headerStyles.headerContent}>
 					<div className={headerStyles.caption}>
-						<p className="caption-2-bold">{caption}</p>
+						<p className="body">{caption}</p>
 					</div>
 					<div className={headerStyles.name}>
-						<p className="title-2">{title}</p>
+						<p className="title-1">{title}</p>
 					</div>
 					<div className={headerStyles.theme}>
 						<p className="heading-3">{description}</p>
@@ -63,7 +63,7 @@ const HeaderTwo: FC<DefaultSlideData> = ({ caption, title, description }) => {
 					<div className={headerStyles.action}>
 						<button
 							onClick={() => toggleDetails()}
-							className={`caption-1 ${headerStyles.actionBtn}`}
+							className={`caption-2 ${headerStyles.actionBtn}`}
 						>
 							Details
 							<i

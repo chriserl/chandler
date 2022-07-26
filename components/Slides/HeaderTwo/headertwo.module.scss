@@ -14,7 +14,7 @@
 	background-size: cover;
 	@include flex(row, flex-end, center);
 	@include tab {
-		padding-bottom: 16vh;
+		padding-bottom: 18vh;
 	}
 	@include xxxlarge-height {
 		height: 68vh;

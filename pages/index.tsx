@@ -19,7 +19,7 @@ import AlertMessage from "../components/Widgets/AlertMessage/AlertMessage";
 const Home: NextPage = () => {
 	const headerData: DefaultSlideData = {
 		caption: "This Saturday, 20:00UTC",
-		title: "The Lamp Service",
+		title: "Engine Room.",
 		description: "Perception & Discernment",
 	};
 	const quoteData: SlideSixData = {
@@ -30,7 +30,6 @@ const Home: NextPage = () => {
 			size: "xxlarge",
 			color: "black",
 		},
-		title: "Verse of the day",
 		description: `So if I, the Lord and the Teacher, washed your feet, you ought to wash one another's feet as well`,
 		extra: "John 13:14 [AMP]",
 	};

@@ -15,7 +15,7 @@ export interface GenericSlideData {
 export interface DefaultSlideData {
 	image?: string;
 	caption?: string | number;
-	title: string;
+	title?: string;
 	description?: string | number;
 	extra?: string | number;
 	linkData?: Link;
