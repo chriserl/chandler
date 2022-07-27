@@ -55,7 +55,7 @@ const HeaderTwo: FC<DefaultSlideData> = ({ caption, title, description }) => {
 						<p className="body">{caption}</p>
 					</div>
 					<div className={headerStyles.name}>
-						<p className="title-1">{title}</p>
+						<p className="title-2">{title}</p>
 					</div>
 					<div className={headerStyles.theme}>
 						<p className="heading-3">{description}</p>
