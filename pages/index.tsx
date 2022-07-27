@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 		shade: "light",
 		textPosition: "textRight",
 		image: "/images/home/s202.jpg",
-		title: "Meetings.",
+		title: "Our Meetings.",
 		description: "We'll be happy to see you \n the next time we meet",
 		linkData: {
 			label: "All meetings",
