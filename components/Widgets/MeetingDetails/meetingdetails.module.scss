@@ -9,7 +9,7 @@
 
 	.detailsContainer {
 		width: 90%;
-		margin: 0 auto;
+		margin: 0 auto respx(20);
 		@include tab {
 			width: respx(372);
 		}

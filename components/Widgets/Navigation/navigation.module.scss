@@ -2,6 +2,10 @@
 @import "../../../scss/utilities";
 
 .nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	width: 100%;
 	border-bottom: 1px solid $gray-04;
 	background-color: hsla(0, 0%, 100%, 0.9);

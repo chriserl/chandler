@@ -63,7 +63,7 @@
 	@include flex(column);
 
 	.slideText {
-		margin-bottom: respx(28);
+		margin-bottom: respx(40);
 
 		.text {
 			@include flex(column, center);
@@ -75,7 +75,7 @@
 	@include flex(column-reverse);
 
 	.slideText {
-		margin-top: respx(28);
+		margin-top: respx(40);
 
 		.text {
 			@include flex(column, center);
