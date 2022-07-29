@@ -11,7 +11,10 @@
 	}
 
 	.row {
-		@include flex(row, center, space-between);
+		@include flex(column);
+		@include tab {
+			@include flex(row, center, space-between);
+		}
 	}
 
 	.light {

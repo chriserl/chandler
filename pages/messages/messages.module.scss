@@ -1,0 +1,13 @@
+@import "../../scss/variables";
+@import "../../scss/utilities";
+
+.messages {
+	width: 88%;
+	margin: 0 auto;
+	padding-top: respx(80);
+
+	.podcasts {
+		@include flex(row, center);
+		margin-top: respx(48);
+	}
+}
