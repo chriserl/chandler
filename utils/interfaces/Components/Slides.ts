@@ -22,6 +22,10 @@ export interface DefaultSlideData {
 	buttonData?: IconButton;
 }
 
+export interface HeaderData extends DefaultSlideData {
+	background: string;
+}
+
 export interface SlideOneData extends DefaultSlideData {
 	shade: "light" | "transparent";
 	textPosition: "textTop" | "textBottom";

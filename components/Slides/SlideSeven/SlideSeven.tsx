@@ -1,10 +1,10 @@
-import headerStyles from "./headertwo.module.scss";
+import headerStyles from "./slideseven.module.scss";
 import { HeaderData } from "../../../utils/interfaces/Components/Slides";
 import { FC, useState } from "react";
 import MeetingDetails from "../../Widgets/MeetingDetails/MeetingDetails";
 import { MeetingDetailsData } from "../../../utils/interfaces/Components/MeetingDetails";
 
-const HeaderTwo: FC<HeaderData> = ({
+const SlideSeven: FC<HeaderData> = ({
 	caption,
 	title,
 	description,
@@ -90,4 +90,4 @@ const HeaderTwo: FC<HeaderData> = ({
 	);
 };
 
-export default HeaderTwo;
+export default SlideSeven;

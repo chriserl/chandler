@@ -3,7 +3,7 @@ import Head from "next/head";
 import index from "./index.module.scss";
 import Navigation from "../components/Widgets/Navigation/Navigation";
 import {
-	DefaultSlideData,
+	HeaderData,
 	SlideOneData,
 	SlideSixData,
 	SlideTwoData,
@@ -17,10 +17,11 @@ import SlideOne from "../components/Slides/SlideOne/SlideOne";
 import AlertMessage from "../components/Widgets/AlertMessage/AlertMessage";
 
 const Home: NextPage = () => {
-	const headerData: DefaultSlideData = {
+	const headerData: HeaderData = {
 		caption: "This Saturday, 20:00UTC",
 		title: "Engine Room.",
 		description: "Perception & Discernment",
+		background: "/images/slides/h2.jpg",
 	};
 	const quoteData: SlideSixData = {
 		iconData: {
@@ -86,11 +87,7 @@ const Home: NextPage = () => {
 			<main>
 				<Navigation theme="dark" />
 
-				<HeaderTwo
-					caption={headerData.caption}
-					title={headerData.title}
-					description={headerData.description}
-				/>
+				<HeaderTwo {...headerData} />
 				<SlidesContainer shade="gray" flow="column">
 					<SlideSix
 						iconData={quoteData.iconData}
