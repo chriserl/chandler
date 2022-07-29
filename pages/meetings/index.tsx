@@ -24,7 +24,7 @@ const Meetings: NextPage = () => {
 				<link rel="icon" href="/images/generic/favicon.ico" />
 			</Head>
 			<main className={meetStyles.meetings}>
-				<Navigation theme="dark" />
+				<Navigation />
 				<HeaderTwo {...headerData} />
 				<SlidesContainer shade="gray" flow="column">
 					<SlideSeven {...headerData} />

@@ -12,7 +12,7 @@ const Messages: NextPage = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<main className={msgStyles.messages}>
-				<Navigation theme="dark" />
+				<Navigation />
 
 				<MessagesHeader />
 			</main>
