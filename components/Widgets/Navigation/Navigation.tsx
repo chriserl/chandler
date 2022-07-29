@@ -18,7 +18,7 @@ const TabLinks: FC<LinksData> = ({ links }) => {
 				.filter((linkItem) => linkItem !== "donate")
 				.map((tabLink) => (
 					<li className={nav.navItem} key={tabLink}>
-						<a href={`/${tabLink}`}>{tabLink}</a>
+						<a href={`/${tabLink.replace(/\s/g, "")}`}>{tabLink}</a>
 					</li>
 				))}
 		</ul>
@@ -35,7 +35,7 @@ const MobileLinks: FC<MobileNavState> = ({ open, links }) => {
 			{links.map((mobileLink) => (
 				<li className={nav.navItem} key={mobileLink}>
 					<a
-						href={`/${mobileLink}`}
+						href={`/${mobileLink.replace(/\s/g, "")}`}
 						className={`animate__animated animate__fadeInDown animate__faster ${nav.navLink}`}
 					>
 						{mobileLink}
