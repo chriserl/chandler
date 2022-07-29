@@ -3,8 +3,12 @@ import Head from "next/head";
 import styles from "./whoweare.module.scss";
 import Navigation from "../../components/Widgets/Navigation/Navigation";
 import SlideEight from "../../components/Slides/SlideEight/SlideEight";
-import { SlideOneData } from "../../utils/interfaces/Components/Slides";
-import SlidesContainer from "../../components/Layout/SlidesContainer/SlidesContainer";
+import {
+	SlideOneData,
+	SlideTwoData,
+} from "../../utils/interfaces/Components/Slides";
+import SlideNine from "../../components/Slides/SlideNine/SlideNine";
+import Footer from "../../components/Widgets/Footer/Footer";
 
 const WhoWeAre: NextPage = () => {
 	const headerData: SlideOneData = {
@@ -21,6 +25,22 @@ const WhoWeAre: NextPage = () => {
 		},
 	};
 
+	const visionData: SlideTwoData = {
+		shade: "light",
+		textPosition: "textLeft",
+		caption: "Vision",
+		title:
+			"Listen to recorded messages \n from our meetings right here \n or on your fave podcast app.",
+	};
+
+	const missionData: SlideTwoData = {
+		shade: "light",
+		textPosition: "textRight",
+		caption: "Mission",
+		title:
+			"Listen to recorded messages \n from our meetings right here \n or on your fave podcast app.",
+	};
+
 	return (
 		<div className={styles.index}>
 			<Head>
@@ -28,8 +48,11 @@ const WhoWeAre: NextPage = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<main className={styles.whoweare}>
-				<Navigation theme="dark" />
+				<Navigation />
 				<SlideEight {...headerData} />
+				<SlideNine {...visionData} />
+				<SlideNine {...missionData} />
+				<Footer />
 			</main>
 		</div>
 	);

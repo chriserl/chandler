@@ -1,0 +1,65 @@
+@import "../../../scss/variables";
+@import "../../../scss/utilities";
+
+.slide {
+	width: 100%;
+	margin: 0 auto;
+	@include tab {
+		width: 88%;
+		@include flex(row, center, center);
+	}
+
+	.slideText {
+		.text {
+			width: 100%;
+
+			.caption {
+				background: $gradient-color;
+				margin-bottom: respx(12);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.title {
+				color: $black-04;
+				@include tab {
+					@include linebreak;
+				}
+			}
+		}
+	}
+}
+
+.textLeft {
+	@include flex(row, center, flex-start);
+
+	.slideText {
+		margin-top: respx(28);
+		@include tab {
+			margin-top: 0;
+			margin-left: respx(200);
+		}
+
+		.text {
+			text-align: left;
+			@include flex(column, flex-start, center);
+		}
+	}
+}
+
+.textRight {
+	@include flex(column-reverse, flex-end, center);
+
+	.slideText {
+		margin-top: respx(28);
+		@include tab {
+			margin-top: 0;
+			margin-right: respx(200);
+		}
+
+		.text {
+			text-align: right;
+			@include flex(column, flex-end, center);
+		}
+	}
+}
