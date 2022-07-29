@@ -7,7 +7,7 @@ import { HeaderData } from "../../utils/interfaces/Components/Slides";
 import SlidesContainer from "../../components/Layout/SlidesContainer/SlidesContainer";
 import SlideSeven from "../../components/Slides/SlideSeven/SlideSeven";
 
-const Home: NextPage = () => {
+const Meetings: NextPage = () => {
 	const headerData: HeaderData = {
 		caption: "This Saturday, 20:00UTC",
 		title: "Engine Room.",
@@ -39,4 +39,4 @@ const Home: NextPage = () => {
 	);
 };
 
-export default Home;
+export default Meetings;
