@@ -60,10 +60,10 @@ const HeaderTwo: FC<HeaderData> = ({
 			{!detailsVisible ? (
 				<div className={headerStyles.headerContent}>
 					<div className={headerStyles.caption}>
-						<p className="caption-2">{caption}</p>
+						<p className="caption-2-bold">{caption}</p>
 					</div>
 					<div className={headerStyles.name}>
-						<p className="title-3">{title}</p>
+						<p className="heading-1-bold">{title}</p>
 					</div>
 					<div className={headerStyles.theme}>
 						<p className="heading-4">{description}</p>

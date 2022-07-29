@@ -21,6 +21,7 @@ const Meetings: NextPage = () => {
 			<Head>
 				<title>Meetings</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<link rel="icon" href="/images/generic/favicon.ico" />
 			</Head>
 			<main className={meetStyles.meetings}>
 				<Navigation theme="dark" />
