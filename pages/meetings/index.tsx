@@ -6,6 +6,7 @@ import HeaderTwo from "../../components/Slides/HeaderTwo/HeaderTwo";
 import { HeaderData } from "../../utils/interfaces/Components/Slides";
 import SlidesContainer from "../../components/Layout/SlidesContainer/SlidesContainer";
 import SlideSeven from "../../components/Slides/SlideSeven/SlideSeven";
+import Footer from "../../components/Widgets/Footer/Footer";
 
 const Meetings: NextPage = () => {
 	const headerData: HeaderData = {
@@ -26,13 +27,13 @@ const Meetings: NextPage = () => {
 				<HeaderTwo {...headerData} />
 				<SlidesContainer shade="gray" flow="column">
 					<SlideSeven {...headerData} />
-					<SlideSeven {...headerData} />
 					<SlidesContainer shade="gray" flow="row">
 						<SlideSeven {...headerData} />
 						<SlideSeven {...headerData} />
 					</SlidesContainer>
 					<SlideSeven {...headerData} />
 					<SlideSeven {...headerData} />
+					<Footer />
 				</SlidesContainer>
 			</main>
 		</div>

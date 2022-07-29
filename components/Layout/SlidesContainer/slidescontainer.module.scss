@@ -6,12 +6,12 @@
 	height: max-content;
 
 	.column {
-		padding: respx(8);
+		padding: respx(6) 0;
 		@include flex(column);
 	}
 
 	.row {
-		@include flex(row, center, center);
+		@include flex(row, center, space-between);
 	}
 
 	.light {

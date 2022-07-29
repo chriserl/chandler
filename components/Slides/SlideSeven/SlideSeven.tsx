@@ -1,4 +1,4 @@
-import headerStyles from "./slideseven.module.scss";
+import styles from "./slideseven.module.scss";
 import { HeaderData } from "../../../utils/interfaces/Components/Slides";
 import { FC, useState } from "react";
 import MeetingDetails from "../../Widgets/MeetingDetails/MeetingDetails";
@@ -53,30 +53,28 @@ const SlideSeven: FC<HeaderData> = ({
 			style={{
 				backgroundImage: `url(${background})`,
 			}}
-			className={`${detailsVisible && headerStyles.detailsVisible} ${
-				headerStyles.headerContainer
+			className={`${detailsVisible && styles.detailsVisible} ${
+				styles.container
 			}`}
 		>
 			{!detailsVisible ? (
-				<div className={headerStyles.headerContent}>
-					<div className={headerStyles.caption}>
-						<p className="body">{caption}</p>
+				<div className={styles.content}>
+					<div className={styles.caption}>
+						<p className="caption-2">{caption}</p>
 					</div>
-					<div className={headerStyles.name}>
-						<p className="title-2">{title}</p>
+					<div className={styles.name}>
+						<p className="heading-1-bold">{title}</p>
 					</div>
-					<div className={headerStyles.theme}>
+					<div className={styles.theme}>
 						<p className="heading-3">{description}</p>
 					</div>
-					<div className={headerStyles.action}>
+					<div className={styles.action}>
 						<button
 							onClick={() => toggleDetails()}
-							className={`caption-2 ${headerStyles.actionBtn}`}
+							className={`caption-2 ${styles.actionBtn}`}
 						>
 							Details
-							<i
-								className={`bx bx-plus ${headerStyles.detailsIcon} caption-2`}
-							></i>
+							<i className={`bx bx-plus ${styles.detailsIcon} caption-2`}></i>
 						</button>
 					</div>
 				</div>

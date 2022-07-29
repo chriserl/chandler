@@ -1,13 +1,13 @@
 @import "../../../scss/utilities";
 @import "../../../scss/variables";
 
-.headerContainer {
-	$background: attr(data-background);
+.container {
 	width: 100%;
 	height: 94vh;
 	padding-bottom: 20vh;
-	margin: 0 auto;
+	margin: 0 respx(2) respx(6.8);
 	line-height: 1;
+	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,7 +19,7 @@
 		height: 48vh;
 	}
 
-	.headerContent {
+	.content {
 		width: 96%;
 		margin: 0 auto;
 		text-align: center;
@@ -68,5 +68,5 @@
 
 .detailsVisible {
 	padding: 0;
-	margin: auto;
+	//margin: auto;
 }
