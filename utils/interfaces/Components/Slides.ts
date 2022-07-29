@@ -51,6 +51,7 @@ export interface SlideSixData extends DefaultSlideData {
 }
 
 export interface AlertMessageData {
+	theme?: "dark";
 	message: string;
 	visibilityDuration: number;
 }

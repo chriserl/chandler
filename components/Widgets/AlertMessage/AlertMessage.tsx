@@ -4,6 +4,7 @@ import "animate.css";
 import { AlertMessageData } from "../../../utils/interfaces/Components/Slides";
 
 const AlertMessage: FC<AlertMessageData> = ({
+	theme,
 	message,
 	visibilityDuration,
 }) => {
@@ -20,9 +21,9 @@ const AlertMessage: FC<AlertMessageData> = ({
 		<div
 			className={`animate__animated  animate__faster ${
 				visibility ? "animate__fadeInDown" : "animate__fadeOut"
-			} ${alertmsg.alertmsg}`}
+			} ${alertmsg.alertmsg} ${theme ? alertmsg.dark : alertmsg.light}`}
 		>
-			<p className={`${alertmsg.msgText} caption-3`}>{message}</p>
+			<p className={`${alertmsg.msgText} caption-3-bold`}>{message}</p>
 		</div>
 	);
 };

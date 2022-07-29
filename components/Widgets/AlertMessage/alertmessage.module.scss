@@ -5,13 +5,27 @@
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	padding: respx(12);
-	background: $black-06;
+	padding: respx(8);
 	@include flex(row, center, center);
 
 	.msgText {
 		text-align: center;
 		line-height: 1.6;
+	}
+}
+
+.light {
+	background: $gray-01;
+
+	.msgText {
+		color: $black-04;
+	}
+}
+
+.dark {
+	background: $black-06;
+
+	.msgText {
 		color: $gray-04;
 	}
 }
